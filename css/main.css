@@ -26,8 +26,12 @@ header img {
   border-radius: 15px;
 }
 
+footer a, footer a:visited {
+  color: white;
+}
+
 h1 {
-  font-size: 48px;
+  font-size: 72px;
 }
 h2 {
   font-size: 36px;
@@ -39,4 +43,26 @@ h2 {
   border-width: 2px;
 }
 
+/* Main Navigation */
+nav a:link, nav a:visited { 
+  color: black; 
+}
+nav a:hover {
+  color: darkgray;
+}
 
+nav a:active { 
+  color: darkgray; 
+}
+
+footer a:link, footer a:visited {
+  color: white; 
+}
+
+footer a:hover {
+  color: darkgray;
+}
+
+footer nav a:active {
+  color: darkgray; 
+}
