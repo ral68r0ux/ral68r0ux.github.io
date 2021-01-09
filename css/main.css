@@ -17,7 +17,6 @@ header, footer{
     text-align: center;
     padding: 1.5rem;
     border-radius: 15px;
-
 }
 
 header img {
@@ -25,7 +24,6 @@ header img {
   margin: 10px;
   border: 1px solid #000;
   border-radius: 15px;
-  
 }
 
 h1 {
@@ -41,9 +39,4 @@ h2 {
   border-width: 2px;
 }
 
-header nav a:visited, footer nav a:visited {
-  background: #733222;
-  color: #bfb7a8; 
-  padding: 10px;
-  border-radius: 15px;
-}
+
