@@ -1,0 +1,19 @@
+@media only screen and (min-width: 52em) {
+    h1 {
+      font-size: 72px;
+    }
+    h2 {
+      font-size: 36px;
+    }
+
+    header img {
+      float: right;
+      margin: 10px;
+      border: 1px solid #000;
+      border-radius: 15px;
+      }
+    
+    header, footer{
+      padding: 1.5rem;
+      border-radius: 15px;
+}
