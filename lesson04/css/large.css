@@ -1,0 +1,50 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header img {width:auto;}
+header h1 {font-size: 3.5rem;}
+header div {font-size: 2rem;}
+
+/*----------- NAVIGATION --------------*/
+  nav{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
+background: #154c87; /* Old browsers */
+background: -moz-linear-gradient(top, #154c87 0%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #154c87 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #154c87 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#154c87', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  }
+
+  nav button {
+    display: none;  /* removes the hamburger button */
+  }
+  nav ul.hide {display: block;} /*force to show in large */
+  nav ul {
+    margin-left: 2%; /* moving nav away from the left side of screen */
+  }
+  nav ul li {
+    float: left; /* change from a column to a row - also include the Clearfix function to small css */
+  }
+
+  nav ul li a{
+    border: none; /* remove the top border */
+    border-right: 1px solid rgba(255,255,255,0.3); /* adding new border on right side - size, type, coloration of traspancey */
+    padding: .8rem 1rem; /* padding to make better for touch screen use. */
+  }
+
+/*----------- MAIN --------------*/
+main, footer {
+        max-width: 64rem;
+        margin:auto;
+}
+
+
+
+/*----------- FOOTER --------------*/
+    
+} /* end of media query */
