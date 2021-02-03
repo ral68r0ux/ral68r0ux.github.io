@@ -31,11 +31,12 @@ header div {margin: 0; font-weight: normal; font-size: .55rem;}
 
 /*----------- NAVIGATION --------------*/
 nav button {
-    margin: .2rem 2%;                /* move hamburger .2rem top and bottom from the border and unordered list - 2% gives space left and right of the hamburger*/
+    margin: -4rem 2%;                /* move hamburger .2rem top and bottom from the border and unordered list - 2% gives space left and right of the hamburger*/
     background-color: transparent;   /* making hamburger look less like a button - removing background */
     border: none;                    /* making hamburger look less like a button - removing border */
     font-size: 1.6rem;               /* making hamburger larger touch use to be 44px - 1.6rem gets us close */
-    color: #fff;                   /* change color of hamburger for contrast */
+    color: #000;                   /* change color of hamburger for contrast */
+    float: right;
 }
 
 nav {

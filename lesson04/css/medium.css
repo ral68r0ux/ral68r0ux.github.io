@@ -14,6 +14,9 @@ header div {font-size: 1.14rem;}
 
 /*----------- NAVIGATION --------------*/
 
+nav button {
+  margin: -5rem 2%;                /* move hamburger -5rem top and bottom from the border and unordered list - 2% gives space left and right of the hamburger*/
+}
 
 /*----------- MAIN --------------*/
 
