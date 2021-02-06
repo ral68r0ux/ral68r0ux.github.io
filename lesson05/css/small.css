@@ -36,12 +36,23 @@ header img {float: left; margin-right: 20px; width: 50px; }
 header h1 {margin: 0; font-size: 1.25rem; padding-top: 1rem;}
 header div {margin: 0; font-weight: normal; font-size: .55rem;}
 
-div#message {
-    background-color: yellow;
+div#anncouncment {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
+  background: #154c87; /* Old browsers */
+  background: -moz-linear-gradient(top, #154c87 0%, #7db9e8 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #154c87 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #154c87 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#154c87', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  border: 2px solid #000;
+  padding: 1rem 2%;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+
 }
 
-div.showme {display: block;}
-div.hideme {display: none;}
+div.show {display: block;}
+div.hide {display: none;}
 
 /*----------- NAVIGATION --------------*/
 nav button {

@@ -11,6 +11,10 @@ header img {width:auto;}
 header h1 {font-size: 3.5rem;}
 header div {font-size: 2rem;}
 
+div#anncouncment {
+  font-size: 3rem;
+}
+
 /*----------- NAVIGATION --------------*/
 
 
