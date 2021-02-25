@@ -122,6 +122,7 @@ background: #628ca6;
 
 tfoot td {
     background: #7fb9c2;
+    font-size: 1rem;
 }
 
 tbody th, tbody td  {
@@ -166,19 +167,6 @@ footer {
     background-color: #ddd;
     padding: .5rem 2%;
     text-align: center;
-}
-
-.one {
-    background-color: #e7f0ed;
-}
-.two {
-    background-color: #e7ffed;
-}
-.three {
-    background-color: #628ca6;
-}
-.four {
-    background-color: #7fb9c2;
 }
 
 
