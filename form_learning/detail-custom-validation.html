@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Detailed custom validation</title>
+    <style>
+      body {
+        font: 1em sans-serif;
+        width: 200px;
+        padding: 0;
+        margin : 0 auto;
+      }
+
+      p * {
+        display: block;
+      }
+
+      input[type=email]{
+        -webkit-appearance: none;
+        appearance: none;
+
+        width: 100%;
+        border: 1px solid #333;
+        margin: 0;
+
+        font-family: inherit;
+        font-size: 90%;
+
+        box-sizing: border-box;
+      }
+
+      /* This is our style for the invalid fields */
+      input:invalid{
+        border-color: #900;
+        background-color: #FDD;
+      }
+
+      input:focus:invalid {
+        outline: none;
+      }
+
+      /* This is the style of our error messages */
+      .error {
+        width  : 100%;
+        padding: 0;
+
+        font-size: 80%;
+        color: white;
+        background-color: #900;
+        border-radius: 0 0 5px 5px;
+
+        box-sizing: border-box;
+      }
+
+      .error.active {
+        padding: 0.3em;
+      }
+    </style>
+</head>
+
+<body>
+  <form novalidate>
+    <p>
+      <label for="mail">
+        <span>Please enter an email address:</span>
+        <input type="email" id="mail" name="mail" required minlength="8">
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    <button>Submit</button>
+  </form>
+  <!--This simple form uses the novalidate attribute to turn off the browser's automatic validation; this lets our script take control over validation. However, this doesn't disable support for the constraint validation API nor the application of CSS pseudo-classes like :valid, etc. That means that even though the browser doesn't automatically check the validity of the form before sending its data, you can still do it yourself and style the form accordingly.
+
+  Our input to validate is an <input type="email">, which is required, and has a minlength of 8 characters. Let's check these using our own code, and show a custom error message for each one.
+
+  We are aiming to show the error messages inside a <span> element. The aria-live attribute is set on that <span> to make sure that our custom error message will be presented to everyone, including it being read out to screenreader users.
+
+  Note: A key point here is that setting the novalidate attribute on the form is what stops the form from showing its own error message bubbles, and allows us to instead display the custom error messages in the DOM in some manner of our own choosing.-->
+  
+  <script>
+    // There are many ways to pick a DOM node; here we get the form itself and the email
+    // input box, as well as the span element into which we will place the error message.
+    const form  = document.getElementsByTagName('form')[0];
+
+    const email = document.getElementById('mail');
+    const emailError = document.querySelector('#mail + span.error');
+
+    email.addEventListener('input', function (event) {
+      // Each time the user types something, we check if the
+      // form fields are valid.
+
+      if (email.validity.valid) {
+        // In case there is an error message visible, if the field
+        // is valid, we remove the error message.
+        emailError.innerHTML = ''; // Reset the content of the message
+        emailError.className = 'error'; // Reset the visual state of the message
+      } else {
+        // If there is still an error, show the correct error
+        showError();
+      }
+    });
+
+    form.addEventListener('submit', function (event) {
+      // if the form contains valid data, we let it submit
+
+      if(!email.validity.valid) {
+        // If it isn't, we display an appropriate error message
+        showError();
+        // Then we prevent the form from being sent by canceling the event
+        event.preventDefault();
+      }
+    });
+
+    function showError() {
+      if(email.validity.valueMissing) {
+        // If the field is empty
+        // display the following error message.
+        emailError.textContent = 'You need to enter an e-mail address.';
+      } else if(email.validity.typeMismatch) {
+        // If the field doesn't contain an email address
+        // display the following error message.
+        emailError.textContent = 'Entered value needs to be an e-mail address.';
+      } else if(email.validity.tooShort) {
+        // If the data is too short
+        // display the following error message.
+        emailError.textContent = `Email should be at least ${ email.minLength } characters; you entered ${ email.value.length }.`;
+      }
+
+      // Set the styling appropriately
+      emailError.className = 'error active';
+    } 
+    /* Every time we change the value of the input, we check to see if it contains valid data. If it has then we remove any error message being shown. If the data is not valid, we run showError() to show the appropriate error.
+
+    Every time we try to submit the form, we again check to see if the data is valid. If so, we let the form submit. If not, we run showError() to show the appropriate error, and stop the form submitting with preventDefault().
+
+    The showError() function uses various properties of the input's validity object to determine what the error is, and then displays an error message as appropriate. */
+  </script>
+</body>
+
+</html>

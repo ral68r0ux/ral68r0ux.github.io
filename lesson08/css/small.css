@@ -1,0 +1,190 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+/* -------- Table Spacing -------- */
+
+table {
+table-layout: fixed;
+/*width: 100%;*/
+border-collapse: collapse;
+border: 2px solid #7fb9c2;
+font-size: 1.5rem;
+margin-bottom: 2rem;
+
+}
+
+table, caption {
+box-shadow: 10px 10px 15px #628ca6;
+}
+
+thead th:nth-child(1) {
+width: 12rem;
+}
+
+thead th:nth-child(2) {
+width: 6rem;
+}
+
+thead th:nth-child(3) {
+width: 12rem;
+}
+
+th, td {
+padding: 15px;
+}
+
+/* -------- Table Typography -------- */
+
+th {
+letter-spacing: 2px;
+}
+
+td {
+letter-spacing: 1px;
+}
+
+tbody td, tfoot, tfoot th {
+text-align: center;
+}
+
+  
+/* -------- Table Graphics and Colors -------- */
+
+thead, tfoot {
+color: white;
+text-shadow: 1px 1px 1px black;
+}
+tfoot {
+    color: black;
+    }
+
+thead th {
+background: #628ca6;
+}
+
+tfoot td {
+    background: #7fb9c2;
+}
+
+tbody th, tbody td  {
+    border: 2px solid #7fb9c2;
+    }
+
+tbody tr:nth-child(4) td:nth-child(3) {
+    background-color: #628ca6;
+    color: white;
+    }
+
+tbody tr:nth-child(5) th:nth-child(1) {
+    font-style: italic;
+    }
+
+
+/* -------- Table Zebra Striping -------- */
+
+tbody tr:nth-child(odd) {
+background-color: #e7deed;
+}
+
+tbody tr:nth-child(even) {
+background-color: #e7f0ed;
+}
+
+/* -------- Table Caption -------- */
+
+caption {
+padding: 20px;
+font-size: 3rem;
+font-weight: bolder;
+caption-side: top;
+color: black;
+text-align: center;
+background: #7fb9c2;
+
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+.one {
+    background-color: #e7f0ed;
+}
+.two {
+    background-color: #e7ffed;
+}
+.three {
+    background-color: #628ca6;
+}
+.four {
+    background-color: #7fb9c2;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
