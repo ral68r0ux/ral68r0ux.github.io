@@ -49,6 +49,25 @@ main, footer {
 
 /* Gallery Page End */
 
+/*---------- Storm Center Page Start ----------*/
+div.stormcontainer {
+  margin: 0;
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 20rem 1fr;
+} 
+.stormobject1 {
+  width: 90%;
+  display: block;
+  margin-right: 4rem;
+
+}
+
+form label.sbs {
+  padding: .4rem 0;
+}
+
 .clearfix:after {
   max-width: 64rem;
 }

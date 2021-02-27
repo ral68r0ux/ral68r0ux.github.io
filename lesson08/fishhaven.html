@@ -15,6 +15,9 @@
     <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
     <!-- STYLE SHEETS -->
     <link href="css/normalize.css" rel="stylesheet">
     <!-- phone-default -->
@@ -27,34 +30,122 @@
 
   <body>
     <!-- HEADER HERE -->
+    <div id="anncouncment">Saturday = Fish Haven Raspberry Shakes in the Park! <br> 12:00 p.m. Saturday at the city park pavilion.</div>
     <header class="clearfix">
-      <img src="images/bearfactslogo.png" alt="Logo">
-      <h1>Bear Facts Weather</h1>
-      <div>Local Weather and Events for Southeast Idaho</div>
+      <div class="box-container">
+        <div class="box-content">
+          <img src="images/bearfactslogo.png" alt="Logo" sizes=50vw
+            srcset="images/bearlogo50.png 1x,
+                    images/bearlogo100.png 2x,
+                    images/bearlogo150.png 3x">
+          <h1>Bear Facts Weather</h1>
+          <div>Local Weather and Events for Southeast Idaho</div>
+        </div>
+      </div>
     </header>
             
     <!-- NAVIGATION HERE -->
     <nav class="clearfix">
-      <button onclick="toggleMenu()">&#9776;</button>
-      <ul id="primaryNav" class="hide">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="preston.html">Preston</a></li>
-        <li><a href="sodasprings.html">Soda Springs</a></li>
-        <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
-        <li><a href="stormcenter.html">Storm Center</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
+      <div class="box-container">
+        <div class="box-content">
+          <button onclick="toggleMenu()">&#9776</button>
+          <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
         
     <!-- CONTENT HERE -->
     <main>
-      <div>
-        <h2>Fish Haven Idaho</h2>
-        <div class="hero">Hero with weather summary</div>
-        <div class="forecast">5 Day Forecast</div>
-        <div class="article">Article</div>
-        <div class="content">Contact Information</div>
-      </div>
+      
+        <h2 class="pagetitle">Fish Haven Idaho</h2>
+        <section class="hero">
+          <picture class="prestonphoto">
+            <source media="(max-width: 400px)" srcset="images/storefront400.jpg">
+            <source media="(max-width: 600px)" srcset="images/storefront600.jpg">
+            <source media="(max-width: 800px)" srcset="images/storefront800.jpg">
+            <img src="images/storefront1200.jpg" alt="Main Street">
+          </picture>
+          
+          <section class="weathersummary">
+            <h3>Weather Summary</h3>
+            <p>Forcast: Snow</p>
+            <p>Current: <span id="temp">30</span>&deg;F</p>
+            <p>Wind: <span id="wind">5</span> mph</p>
+            <p id="chill">Wind Chill</p>
+          </section>
+        </section>
+
+        <section class="forecast">
+          <h2>5 Day Forecast</h2>
+          <div>
+            <h5>Wednesday</h5>
+            <img src="images/snow.png" alt="Snow">
+            <p>30&deg;</p>
+          </div>
+          <div>
+            <h5>Thursday</h5>
+            <img src="images/cloudy.png" alt="Cloudy">
+            <p>31&deg;</p>
+          </div>
+          <div>
+            <h5>Friday</h5>
+            <img src="images/partlysunny.png" alt="Partly Cloudy">
+            <p>36&deg;</p>
+          </div>
+          <div>
+            <h5>Saturday</h5>
+            <img src="images/sunny.png" alt="Sunny">
+            <p>38&deg;</p>
+          </div>
+          <div>
+            <h5>Sunday</h5>
+            <img src="images/sunny.png" alt="Sunny">
+            <p>39&deg;</p>
+          </div>
+        </section>
+        
+        <section class="article">
+          <h2>Favorite Fishing Holes</h2>
+          <picture class="storyphoto">
+            <source media="(max-width: 300px)" srcset="images/fishing150.jpg">
+            <source media="(max-width: 600px)" srcset="images/fishing300.jpg">
+            <img src="images/fishing1200.jpg" alt="Fishing">
+          </picture>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque aliquam vestibulum morbi blandit. Erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Dis parturient montes nascetur ridiculus mus. Odio morbi quis commodo odio. A diam maecenas sed enim ut sem. Magna fermentum iaculis eu non diam. Volutpat maecenas volutpat blandit aliquam etiam. Turpis massa tincidunt dui ut ornare lectus sit. Diam maecenas sed enim ut sem viverra aliquet. Aliquam faucibus purus in massa tempor nec feugiat nisl. Netus et malesuada fames ac turpis. Orci phasellus egestas tellus rutrum tellus pellentesque eu. Cursus turpis massa tincidunt dui ut ornare. Eget dolor morbi non arcu risus. Felis bibendum ut tristique et egestas quis. Enim sed faucibus turpis in. Lectus quam id leo in. Aliquet enim tortor at auctor urna nunc id. Vitae sapien pellentesque habitant morbi tristique senectus et netus.</p>
+          
+          <p>Massa enim nec dui nunc mattis enim ut tellus. Cras tincidunt lobortis feugiat vivamus at augue eget. Orci ac auctor augue mauris augue neque. Varius vel pharetra vel turpis nunc eget. Turpis cursus in hac habitasse platea dictumst quisque sagittis. Morbi tincidunt augue interdum velit euismod in pellentesque. Aenean euismod elementum nisi quis eleifend quam. Lectus magna fringilla urna porttitor rhoncus dolor. Ornare lectus sit amet est placerat in egestas erat imperdiet. Dictum at tempor commodo ullamcorper a lacus vestibulum sed arcu. Pellentesque eu tincidunt tortor aliquam. Semper eget duis at tellus. Rhoncus mattis rhoncus urna neque viverra justo nec. Lorem ipsum dolor sit amet consectetur adipiscing elit. Magna fermentum iaculis eu non diam phasellus vestibulum. Malesuada fames ac turpis egestas maecenas. Sed cras ornare arcu dui vivamus arcu felis bibendum. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Mauris nunc congue nisi vitae suscipit. Nulla aliquet enim tortor at auctor.</p>
+            
+          <p>Nisl purus in mollis nunc sed id semper risus in. Diam maecenas sed enim ut sem viverra aliquet eget. Diam donec adipiscing tristique risus nec feugiat in fermentum. Tortor pretium viverra suspendisse potenti nullam ac. Commodo elit at imperdiet dui accumsan sit amet nulla. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Pellentesque massa placerat duis ultricies. Tempor commodo ullamcorper a lacus vestibulum. Risus ultricies tristique nulla aliquet. Elementum facilisis leo vel fringilla est ullamcorper eget. Euismod in pellentesque massa placerat duis. Convallis tellus id interdum velit. Vitae nunc sed velit dignissim sodales.</p>
+        </section>
+
+        <section class="contact">
+          <h2>Contact Us</h2>
+          <section class="contact-block">
+            <div class="address-block">
+              <h3>Address:</h3>            
+              <p>Bear Facts Weather</p>
+              <p>246 S State St</p>
+              <p>Preston, ID 83263</p>
+            </div>
+            <div class="phone-block">
+              <h3>Phone:</h3>
+              <p>(208) 555-6789</p>
+            </div>
+            <div class="email-block">
+              <h3>Email:</h3>
+              <p>contact@bearfactsweather.com</p>
+            </div>
+            <img class="map" src="images/fishhavenmap.png" alt="Map Fish Haven ID">
+          </section>
+        </section>
+      
     </main>
         
     <!-- FOOTER HERE -->   
@@ -64,5 +155,7 @@
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/message.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>

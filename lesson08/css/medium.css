@@ -52,7 +52,7 @@ nav ul li {
 nav ul li a{
   border: none; /* remove the top border */
   border-right: 1px solid rgba(255,255,255,0.3); /* adding new border on right side - size, type, coloration of traspancey */
-  padding: .8rem 1rem; /* padding to make better for touch screen use. */
+  padding: .8rem .60rem; /* padding to make better for touch screen use. */
 }
 /*----------- MAIN --------------*/
 .weathersummary {
@@ -113,7 +113,26 @@ nav ul li a{
 
 /* Gallery Page End */
 
+/*---------- Storm Center Page Start ----------*/
 
+
+
+div.stormcontainer {
+  margin: 0;
+  position: relative;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+} 
+
+.stormobject2 {
+  width: 90%;
+  display: block;
+  margin-left: 4rem;
+  margin-bottom: 4rem;
+}
+
+/*---------- Storm Center Page End ----------*/
 
 
 /*----------- FOOTER --------------*/
