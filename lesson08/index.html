@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather and community news for Southeast Idaho.">
+    <meta name="author" content="Andrew Larsen">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Bear Facts Weather</title>
+
+        <!-- Typography -->
+        <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comfortaa:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+      <img src="images/bearfactslogo.png" alt="Logo"
+          srcset="images/bearlogo50 1x,
+                  images/bearlogo100 2x,
+                  images/bearlogo150 3x">
+      <h1>Bear Facts Weather</h1>
+      <div>Local Weather and Events for Southeast Idaho</div>
+    </header>
+            
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+        
+    <!-- CONTENT HERE -->
+    <main>
+      <div>
+        <h2>Bear Facts Weather</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas pretium aenean pharetra magna. Enim diam vulputate ut pharetra sit amet. Porttitor lacus luctus accumsan tortor. Pulvinar etiam non quam lacus suspendisse. Massa massa ultricies mi quis hendrerit dolor magna. Arcu odio ut sem nulla pharetra diam sit amet nisl. Leo duis ut diam quam nulla porttitor massa. In est ante in nibh mauris cursus. Aliquet eget sit amet tellus cras adipiscing enim eu turpis. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci a. Viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Arcu ac tortor dignissim convallis aenean et tortor. Est sit amet facilisis magna etiam. </p>
+      </div>
+    </main>
+        
+    <!-- FOOTER HERE -->   
+    <footer>
+      &copy; 2021 &bull; Andrew Larsen &bull; WDD230-07 <br>
+      Last Updated: <span id="currentdate"></span>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

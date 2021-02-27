@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Form to report sever regional weather conditions.">
+    <meta name="author" content="Andrew Larsen">
+
+    <!-- Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Comfortaa:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- This start file was build by Paul Cheney  -->
+    <title>Bear Facts Weather / Storm Tracker</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+      <img src="images/bearfactslogo.png" alt="Logo">
+      <h1>Bear Facts Weather</h1>
+      <div>Local Weather and Events for Southeast Idaho</div>
+    </header>
+            
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="preston.html">Preston</a></li>
+        <li><a href="sodasprings.html">Soda Springs</a></li>
+        <li><a href="fishhaven.html">Fish Haven</a></li>
+        <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+        
+    <!-- CONTENT HERE -->
+    <main>
+      <h2>Storm Tracker</h2>
+      <form method="get" action="thankYou.html"></form>
+        <fieldset>
+          <label>*Full Name <input type="text" name="fullname" requited></label>
+          <label> Email <input type="email" name="email" placeholder="someone@email.com"></label>
+          <label>*Phone <input type="tel" name="phone" placeholder="1235551234" required></label>
+          <label>*Zip Code <input type="number" name="zipcode" required></label>
+        </fieldset>
+        <fieldset>
+          <label> Storm Date <input type="date" name="stormDate"></label>
+          <label>Storm Type
+            <select name="stormtype">
+              <option value="">Please Select</option>
+              <option value="flashflood">Flash Flood</option>
+              <option value="hail">Hail</option>
+              <option value="hurricane">Hurricane</option>
+              <option value="thunderstorm">Thunder Storm</option>
+              <option value="tornado">Tornado</option>
+            </select>
+          </label>
+          <label>Storm Severity<input type="range" name="severity"></label>
+          <label>Storm Region
+            <select name="stormregion">
+              <option value="">Please Select</option>
+              <option value="fishHaven">Fish Haven</option>
+              <option value="presTon">Preston</option>
+              <option value="sodaSpings">Soda Springs</option>
+            </select> 
+          </label>
+          <div>User In-Danager Level</div>
+          <label><input type="radio" name="level" value="yes">Yes</label>
+          <label><input type="radio" name="level" value="maybe">Maybe</label>
+          <label><input type="radio" name="level" value="no">No</label>
+        </fieldset>
+        <fieldset>
+          <label>Additional Storm Information<input type="textarea" name="comment"></label>
+        </fieldset>
+        <input type="submit" value="Send Storm Information" class="submitBtn">
+    </main>
+        
+    <!-- FOOTER HERE -->   
+    <footer>
+      &copy; 2021 &bull; Andrew Larsen &bull; WDD230-07 <br>
+      Last Updated: <span id="currentdate"></span>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
