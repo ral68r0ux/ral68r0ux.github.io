@@ -80,7 +80,6 @@ nav ul li a {              /* styling of the navigation buttons */
     text-align: center;
     font-weight:lighter
 }
-nav ul li:first-child a {border-left: none;}
 
 nav ul li a:hover {
     background-color: rgba(255,255,255,.3); /* The hover will be a traspancy of white to change the color of the mouse hover */
@@ -126,8 +125,6 @@ main picture.prestonphoto {
 .forecast {
     display: none;
 
-th, td {
-padding: 15px;
 }
 
 .article {
@@ -207,16 +204,6 @@ picture.imageblock img:hover {
 
 /* Gallery Page End */
 
-/* ---------- Storm Page Start----------*/
-form fieldset {
-    margin: 2rem 0;
-    border: 1px solid pink;
-    border-radius: 10px;
-    padding: .5rem 2%;
-}
-
-/* ---------- Storm Page End ----------*/
-
 /*----------- FOOTER --------------*/
 footer {
     font-family: 'Comfortaa', cursive;
@@ -226,7 +213,6 @@ footer {
     text-align: center;
     width: 100%;
 }
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
