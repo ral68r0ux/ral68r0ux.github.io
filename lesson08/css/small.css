@@ -290,7 +290,7 @@ form label.top input:required:valid {
     border-left: green solid 6px;
 }
 
-div img {
+/* div img {
     display: none;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px 5px gray;
