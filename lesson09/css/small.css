@@ -215,7 +215,7 @@ main picture.prestonphoto {
     grid-template-columns: 1fr;
 }
 
-picture.imageblock img { 
+div.imageblock img { 
     width: 300px;
     height: auto;
     
@@ -224,18 +224,19 @@ picture.imageblock img {
     transition: filter 2s;
 }
 
-picture.imageblock img[data-src] {
+div.imageblock img[data-src] {
     filter: blur(0.2em);
 }
 
-picture.imageblock figcaption {
+div.imageblock p {
     padding-bottom: 2rem;
     color: black;
     font-weight: bolder;
     text-align: center;
+    margin: 0;
 }
 
-picture.imageblock img:hover {
+div.imageblock img:hover {
     box-shadow: 10px 10px 30px 10px gray;
 }
 
