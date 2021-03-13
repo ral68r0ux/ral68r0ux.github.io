@@ -74,40 +74,30 @@
           </picture>
           
           <section class="weathersummary">
-            <h3>Weather Summary</h3>
-            <p>Forcast: Snow</p>
-            <p>Current: <span id="temp">30</span>&deg;F</p>
-            <p>Wind: <span id="wind">5</span> mph</p>
-            <p id="chill">Wind Chill</p>
+            <h3>Current Weather Summary</h3>
+            <section class="summaryBox">
+              <div class="summaryTitles">
+                <p>Forcast: &nbsp;</p>
+                <p>Tempurature: &nbsp;</p>
+                <p>Wind Chill: &nbsp;</p>
+                <p>Wind Speed: &nbsp;</p>
+                <p>Humidity: &nbsp;</p>
+              </div>
+              <div class="summaryData">
+                <p><span id="currentForecast"></span></p>
+                <p><span id="currentTemp"></span>&deg;F</p>
+                <p><span id="windChill"></span>&deg;F</p>
+                <p><span id="currentWind"></span> mph</p>
+                <p><span id="currentHumidity"></span>&percnt;</p>
+              </div>
+            </section>
           </section>
         </section>
 
         <section class="forecast">
           <h2>5 Day Forecast</h2>
-          <div>
-            <h5>Wednesday</h5>
-            <img src="images/snow.png" alt="Snow">
-            <p>30&deg;</p>
-          </div>
-          <div>
-            <h5>Thursday</h5>
-            <img src="images/cloudy.png" alt="Cloudy">
-            <p>31&deg;</p>
-          </div>
-          <div>
-            <h5>Friday</h5>
-            <img src="images/partlysunny.png" alt="Partly Cloudy">
-            <p>36&deg;</p>
-          </div>
-          <div>
-            <h5>Saturday</h5>
-            <img src="images/sunny.png" alt="Sunny">
-            <p>38&deg;</p>
-          </div>
-          <div>
-            <h5>Sunday</h5>
-            <img src="images/sunny.png" alt="Sunny">
-            <p>39&deg;</p>
+          <div class="forecastBlock" id="card">
+            
           </div>
         </section>
         
@@ -156,6 +146,6 @@
     <script src="js/currentdate.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/message.js"></script>
-    <script src="js/windchill.js"></script>
+    <script src="js/weatherFishHaven.js"></script>
   </body>
 </html>

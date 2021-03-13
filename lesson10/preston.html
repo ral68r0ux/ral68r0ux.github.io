@@ -64,7 +64,7 @@
     <!-- CONTENT HERE -->
     <main>
       
-        <h2 id="pagetitle">Preston Idaho</h2>
+        <h2 class="pagetitle">Preston Idaho</h2>
         <section class="hero">
           <picture class="prestonphoto">
             <source media="(max-width: 400px)" srcset="images/storefront400.jpg">
@@ -75,26 +75,28 @@
           
           <section class="weathersummary">
             <h3>Current Weather Summary</h3>
-            <div class="summaryTitles">
-              <p>Forcast: </p>
-              <p>Tempurature: </span>&deg;F</p>
-              <p>Wind Chill: </p>
-              <p>Wind Speed: </p>
-              <p>Humidity: </p>
-            </div>
-            <div class="summaryData">
-              <p><span id="forecast"></span></p>
-              <p><span id="currentTemp"></span>&deg;F</p>
-              <p><span id="windChill"></span>&deg;F</p>
-              <p><span id="currentWind"></span> mph</p>
-              <p><span id="currentHumidity"></span>&percnt;</p>
-            </div>
+            <section class="summaryBox">
+              <div class="summaryTitles">
+                <p>Forcast: &nbsp;</p>
+                <p>Tempurature: &nbsp;</p>
+                <p>Wind Chill: &nbsp;</p>
+                <p>Wind Speed: &nbsp;</p>
+                <p>Humidity: &nbsp;</p>
+              </div>
+              <div class="summaryData">
+                <p><span id="currentForecast"></span></p>
+                <p><span id="currentTemp"></span>&deg;F</p>
+                <p><span id="windChill"></span>&deg;F</p>
+                <p><span id="currentWind"></span> mph</p>
+                <p><span id="currentHumidity"></span>&percnt;</p>
+              </div>
+            </section>
           </section>
         </section>
 
         <section class="forecast">
           <h2>5 Day Forecast</h2>
-          <div class="forcastBlock" id="card">
+          <div class="forecastBlock" id="card">
             
           </div>
         </section>
@@ -140,6 +142,7 @@
     <footer>
       &copy; 2021 &bull; Andrew Larsen &bull; WDD230-07 <br>
       Last Updated: <span id="currentdate"></span>
+      <p class="opm">Weather data by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
     </footer>
     <script src="js/currentdate.js"></script>
     <script src="js/scripts.js"></script>

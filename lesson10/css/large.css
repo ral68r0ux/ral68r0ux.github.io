@@ -35,6 +35,12 @@ main, footer {
         margin:auto;
 }
 
+.forecastBlock {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  
+}
+
 .article img {
   /*max-width: 375px;*/
 }

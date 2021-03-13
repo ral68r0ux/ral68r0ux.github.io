@@ -10,13 +10,13 @@ const weekDayName = new Array(7);
   weekDayName[5] = "Friday";
   weekDayName[6] = "Saturday";
 
-  const apiURL = '//api.openweathermap.org/data/2.5/forecast?id=5604473&appid=802354a04208bdad04e551c4b5cb1f9f&units=imperial' // city id = preston id
+  const apiURL = '//api.openweathermap.org/data/2.5/forecast?lat=42.0372&lon=-111.3960&id=5604473&appid=802354a04208bdad04e551c4b5cb1f9f&units=imperial' // city id = preston id
   
 // send fetch and return
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    
+console.log(weatherInfo);
 // Begin - Current Weather Summary    
     document.getElementById("currentForecast").textContent=weatherInfo.list[0].weather[0].description;
     document.getElementById("currentTemp").textContent=weatherInfo.list[0].main.temp;
