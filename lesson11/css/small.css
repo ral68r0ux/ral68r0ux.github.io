@@ -106,12 +106,15 @@ div.cards div {
     margin-top: .75rem;
     border-radius: 10px;
     justify-items: center;
+    box-shadow: 5px 5px 10px 5px gray;
 }
 div.cards div picture {
     width: 100%;
+    
 }
 div.cards div picture img {
     width: 100%;
+    border-radius: 5px 5px 0 0;
 }
 div.cards h2 {
     font-size: 1.5rem;
@@ -140,22 +143,28 @@ div.cards h2 {
     width: 100%;
     
 }
-main picture.prestonphoto img {
+main picture.herophoto img {
     width: 100%;
+    border-radius: 5px;    
 }
-main picture.prestonphoto {
+main picture.herophoto {
     display: block;
     width: 100%;
     margin: 0;
+    box-shadow: 5px 5px 10px 5px gray;
 }
   
 .weathersummary {
+    font-family: 'Combo', cursive;
+    font-size: 1.25rem;
     top: 3rem;
     left: 3rem;
     background: radial-gradient(#d2fafb, #a3bfc8);
     border: 1px solid #000;
-    padding: .5rem;
+    padding: .75rem;
     box-shadow: 0 0 30px #000;
+    border-radius: 15px;
+    text-align: center;
 
 }
 .summaryBox {
@@ -181,12 +190,14 @@ main picture.prestonphoto {
 .forecastBlock {
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 20px;
 }
-  
+
 .forecastBlock div {
     text-align: center;
     border: 2px solid #000;
     max-width: 320px;
+    border-radius: 15px;
 }
   
 .forecastBlock div h3 {
@@ -195,6 +206,7 @@ main picture.prestonphoto {
     padding: 1rem 0;
     color: #fff;
     font-weight: bold;
+    border-radius: 13px 13px 0 0;
 }
 
 .forecastBlock div img {
@@ -217,7 +229,8 @@ main picture.prestonphoto {
 .article img {
     width: 50%;
     float: right;
-    padding: 1rem;
+    border-radius: 15px;
+    margin: .75rem;
 }
 
 .contact {

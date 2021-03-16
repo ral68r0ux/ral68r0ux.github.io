@@ -75,8 +75,7 @@ div.cards div:nth-child(odd) section {
 
 .forecastBlock {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-row-gap: 20px;
-  
+  grid-column-gap: 20px;
 }
 
 .article img {
@@ -89,6 +88,7 @@ div.cards div:nth-child(odd) section {
 .contact-block {
   grid-template-columns: 150px 150px auto;
   grid-template-rows: 60px 60px auto;
+  
 }
 
 .map {
@@ -97,6 +97,13 @@ div.cards div:nth-child(odd) section {
   max-width: 480px;
   grid-column: 3/4;
   grid-row: 1/4;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 5px gray;
+}
+
+.map img {
+  border-radius: 15px;
+
 }
 
 /* Gallery Page Start */

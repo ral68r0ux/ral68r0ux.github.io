@@ -52,11 +52,14 @@ console.log(weatherInfo);
         
         let dayName = document.createElement('h3');
         dayName.textContent = weekDayName[fiveDayNum];
-
+        
         let dayIcon = document.createElement('img');
         let dayIconCode = weatherInfo.list[i].weather[0].icon;
         let dayIconPath = '//openweathermap.org/img/w/' + dayIconCode + '.png';
+        let dayIconAlt = weatherInfo.list[i].weather[0].description; 
+        
         dayIcon.src = dayIconPath;
+        dayIcon.alt = dayIconAlt;
 
         let dayTemp = document.createElement('p');
         dayTemp.textContent = weatherInfo.textContent=weatherInfo.list[i].main.temp + "\xB0";
