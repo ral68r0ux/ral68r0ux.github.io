@@ -67,11 +67,11 @@
 
     <h2 class="pagetitle">Soda Springs Idaho</h2>
     <section class="hero">
-      <picture class="prestonphoto">
-        <source media="(max-width: 400px)" srcset="images/storefront400.jpg">
-        <source media="(max-width: 600px)" srcset="images/storefront600.jpg">
-        <source media="(max-width: 800px)" srcset="images/storefront800.jpg">
-        <img src="images/storefront1200.jpg" alt="Main Street">
+      <picture class="herophoto">
+        <source media="(max-width: 400px)" srcset="images/mountainscene400.jpg">
+        <source media="(max-width: 600px)" srcset="images/mountainscene600.jpg">
+        <source media="(max-width: 800px)" srcset="images/mountainscene800.jpg">
+        <img src="images/mountainscene1200.jpg" alt="Mountain Scene">
       </picture>
 
       <section class="weathersummary">
@@ -86,10 +86,10 @@
           </div>
           <div class="summaryData">
             <p><span id="currentForecast"></span></p>
-            <p><span id="currentTemp"></span>&deg;F</p>
-            <p><span id="windChill"></span>&deg;F</p>
-            <p><span id="currentWind"></span> mph</p>
-            <p><span id="currentHumidity"></span>&percnt;</p>
+            <p><span id="currentTemp"></span></p>
+            <p><span id="windChill"></span></p>
+            <p><span id="currentWind"></span></p>
+            <p><span id="currentHumidity"></span></p>
           </div>
         </section>
       </section>
@@ -97,17 +97,23 @@
 
     <section class="forecast">
       <h2>5 Day Forecast</h2>
-      <div class="forecastBlock" id="card">
+      <div class="forecastBlock" id="card"></div>
+    </section>
 
+    <section class="event">
+      <div class="eventBox">
+        <h2>Upcomeing Events</h2>
+        <div id="box"></div>
       </div>
     </section>
 
     <section class="article">
-      <h2>Favorite Fishing Holes</h2>
+      <h2>Favorite Hiking Trails</h2>
       <picture class="storyphoto">
-        <source media="(max-width: 300px)" srcset="images/fishing150.jpg">
-        <source media="(max-width: 600px)" srcset="images/fishing300.jpg">
-        <img src="images/fishing1200.jpg" alt="Fishing">
+        <source media="(max-width: 150px)" srcset="images/hiking150.jpg">
+        <source media="(max-width: 300px)" srcset="images/hiking300.jpg">
+        <source media="(max-width: 600px)" srcset="images/hiking600.jpg">
+        <img src="images/hiking600.jpg" alt="Fishing">
       </picture>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Neque aliquam vestibulum morbi blandit. Erat pellentesque adipiscing commodo elit at imperdiet dui
@@ -156,7 +162,14 @@
           <h3>Email:</h3>
           <p>contact@bearfactsweather.com</p>
         </div>
-        <img class="map" src="images/sodaspringsmap.png" alt="Map Soda Springs ID">
+        <a  class="map" href="https://www.google.com/maps/@42.6614431,-111.6062816,14z" target="_blank">
+          <picture>
+            <source media="(max-width: 150px)" srcset="images/sodaspringsmap150.jpg">
+            <source media="(max-width: 300px)" srcset="images/sodaspringsmap300.jpg">
+            <source media="(max-width: 600px)" srcset="images/sodaspringsmap600.jpg">
+            <img src="images/sodaspringsmap600.jpg" alt="Map Soda Springs Idaho">
+          </picture>
+        </a>
       </section>
     </section>
 
@@ -166,11 +179,13 @@
   <footer>
     &copy; 2021 &bull; Andrew Larsen &bull; WDD230-07 <br>
     Last Updated: <span id="currentdate"></span>
+    <p class="opm">Weather data by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
   </footer>
   <script src="js/currentdate.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/message.js"></script>
   <script src="js/weatherSodaSprings.js"></script>
+  <script src="js/eventssoda.js"></script>
 </body>
 
 </html>

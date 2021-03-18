@@ -77,10 +77,17 @@ div.cards div:nth-child(odd) section {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
 }
+/*---------- Events ---------*/  
+.event h2 {
+  font-size: 2.5rem;
+}
+
+.eventBox {
+  font-size: 1.5rem;
+}
 
 .article img {
   width: 50%;
-  /*max-width: 300px;*/
   float: right;
   padding: 1rem;
 }
@@ -103,7 +110,7 @@ div.cards div:nth-child(odd) section {
 
 .map img {
   border-radius: 15px;
-
+  width: 100%;
 }
 
 /* Gallery Page Start */

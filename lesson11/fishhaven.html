@@ -29,7 +29,7 @@
   <link href="css/large.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="5585000">
   <!-- HEADER HERE -->
   <div id="anncouncment"></div>
   <header class="clearfix">
@@ -67,10 +67,10 @@
     <h2 class="pagetitle">Fish Haven Idaho</h2>
     <section class="hero">
       <picture class="herophoto">
-        <source media="(max-width: 400px)" srcset="images/storefront400.jpg">
-        <source media="(max-width: 600px)" srcset="images/storefront600.jpg">
-        <source media="(max-width: 800px)" srcset="images/storefront800.jpg">
-        <img src="images/storefront1200.jpg" alt="Main Street">
+        <source media="(max-width: 400px)" srcset="images/sunset400.jpg">
+        <source media="(max-width: 600px)" srcset="images/sunset600.jpg">
+        <source media="(max-width: 800px)" srcset="images/sunset800.jpg">
+        <img src="images/sunset1200.jpg" alt="Sunset">
       </picture>
 
       <section class="weathersummary">
@@ -85,10 +85,10 @@
           </div>
           <div class="summaryData">
             <p><span id="currentForecast"></span></p>
-            <p><span id="currentTemp"></span>&deg;F</p>
-            <p><span id="windChill"></span>&deg;F</p>
-            <p><span id="currentWind"></span> mph</p>
-            <p><span id="currentHumidity"></span>&percnt;</p>
+            <p><span id="currentTemp"></span></p>
+            <p><span id="windChill"></span></p>
+            <p><span id="currentWind"></span></p>
+            <p><span id="currentHumidity"></span></p>
           </div>
         </section>
       </section>
@@ -96,17 +96,23 @@
 
     <section class="forecast">
       <h2>5 Day Forecast</h2>
-      <div class="forecastBlock" id="card">
+      <div class="forecastBlock" id="card"></div>
+    </section>
 
+    <section class="event">
+      <div class="eventBox">
+        <h2>Upcomeing Events</h2>
+        <div id="box"></div>
       </div>
     </section>
 
     <section class="article">
-      <h2>Favorite Fishing Holes</h2>
+      <h2>Favorite Camping Locations</h2>
       <picture class="storyphoto">
-        <source media="(max-width: 300px)" srcset="images/fishing150.jpg">
-        <source media="(max-width: 600px)" srcset="images/fishing300.jpg">
-        <img src="images/fishing1200.jpg" alt="Fishing">
+        <source media="(max-width: 150px)" srcset="images/camping150.jpg">
+        <source media="(max-width: 300px)" srcset="images/camping300.jpg">
+        <source media="(max-width: 600px)" srcset="images/camping600.jpg">
+        <img src="images/camping600.jpg" alt="Fishing">
       </picture>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Neque aliquam vestibulum morbi blandit. Erat pellentesque adipiscing commodo elit at imperdiet dui
@@ -155,7 +161,14 @@
           <h3>Email:</h3>
           <p>contact@bearfactsweather.com</p>
         </div>
-        <img class="map" src="images/fishhavenmap.png" alt="Map Fish Haven ID">
+        <a  class="map" href="https://www.google.com/maps/@42.0378898,-111.3978433,15z" target="_blank">
+          <picture>
+            <source media="(max-width: 150px)" srcset="images/fishhavenmap150.jpg">
+            <source media="(max-width: 300px)" srcset="images/fishhavenmap300.jpg">
+            <source media="(max-width: 600px)" srcset="images/fishhavenmap600.jpg">
+            <img src="images/fishhavenmap600.jpg" alt="Map Fish Haven Idaho">
+          </picture>
+        </a>
       </section>
     </section>
 
@@ -165,11 +178,13 @@
   <footer>
     &copy; 2021 &bull; Andrew Larsen &bull; WDD230-07 <br>
     Last Updated: <span id="currentdate"></span>
+    <p class="opm">Weather data by <a href="https://openweathermap.org/">OpenWeatherMap.org</a></p>
   </footer>
   <script src="js/currentdate.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/message.js"></script>
   <script src="js/weatherFishHaven.js"></script>
+  <script src="js/eventsfish.js"></script>
 </body>
 
 </html>

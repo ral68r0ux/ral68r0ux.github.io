@@ -67,7 +67,7 @@
 
     <h2 class="pagetitle">Preston Idaho</h2>
     <section class="hero">
-      <picture class="prestonphoto">
+      <picture class="herophoto">
         <source media="(max-width: 400px)" srcset="images/storefront400.jpg">
         <source media="(max-width: 600px)" srcset="images/storefront600.jpg">
         <source media="(max-width: 800px)" srcset="images/storefront800.jpg">
@@ -86,10 +86,10 @@
           </div>
           <div class="summaryData">
             <p><span id="currentForecast"></span></p>
-            <p><span id="currentTemp"></span>&deg;F</p>
-            <p><span id="windChill"></span>&deg;F</p>
-            <p><span id="currentWind"></span> mph</p>
-            <p><span id="currentHumidity"></span>&percnt;</p>
+            <p><span id="currentTemp"></span></p>
+            <p><span id="windChill"></span></p>
+            <p><span id="currentWind"></span></p>
+            <p><span id="currentHumidity"></span></p>
           </div>
         </section>
       </section>
@@ -97,17 +97,23 @@
 
     <section class="forecast">
       <h2>5 Day Forecast</h2>
-      <div class="forecastBlock" id="card">
+      <div class="forecastBlock" id="card"></div>
+    </section>
 
+    <section class="event">
+      <div class="eventBox">
+        <h2>Upcomeing Events</h2>
+        <div id="box"></div>
       </div>
     </section>
 
     <section class="article">
       <h2>Favorite Fishing Holes</h2>
       <picture class="storyphoto">
-        <source media="(max-width: 300px)" srcset="images/fishing150.jpg">
-        <source media="(max-width: 600px)" srcset="images/fishing300.jpg">
-        <img src="images/fishing1200.jpg" alt="Fishing">
+        <source media="(max-width: 150px)" srcset="images/fishing150.jpg">
+        <source media="(max-width: 300px)" srcset="images/fishing300.jpg">
+        <source media="(max-width: 600px)" srcset="images/fishing600.jpg">
+        <img src="images/fishing600.jpg" alt="Fishing">
       </picture>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Neque aliquam vestibulum morbi blandit. Erat pellentesque adipiscing commodo elit at imperdiet dui
@@ -156,7 +162,14 @@
           <h3>Email:</h3>
           <p>contact@bearfactsweather.com</p>
         </div>
-        <img class="map" src="images/prestonmap.png" alt="Map Preston ID">
+        <a  class="map" href="https://www.google.com/maps/@42.1006969,-111.8774072,13z" target="_blank">
+          <picture>
+            <source media="(max-width: 150px)" srcset="images/prestonmap150.jpg">
+            <source media="(max-width: 300px)" srcset="images/prestonmap300.jpg">
+            <source media="(max-width: 600px)" srcset="images/prestonmap600.jpg">
+            <img src="images/prestonmap600.jpg" alt="Map Preston Idaho">
+          </picture>
+        </a>
       </section>
     </section>
 
@@ -172,7 +185,7 @@
   <script src="js/scripts.js"></script>
   <script src="js/message.js"></script>
   <script src="js/weatherPreston.js"></script>
-
+  <script src="js/eventspreston.js"></script>
 </body>
 
 </html>

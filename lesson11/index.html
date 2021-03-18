@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Weather and community news for Preston Idaho.">
+  <meta name="description" content="Home Page of Bear Facts Weather - weather and local new for Southeast Idaho.">
   <meta name="author" content="Andrew Larsen">
 
   <!-- Typography -->
@@ -35,7 +35,7 @@
   <header class="clearfix">
     <div class="box-container">
       <div class="box-content">
-        <img src="images/bearfactslogo.png" alt="Logo" sizes=50vw srcset="images/bearfactslogo50.png 50w,
+        <img src="images/bearfactslogo.png" alt="Logo" width=75px height=auto sizes=50vw srcset="images/bearfactslogo50.png 50w,
           images/bearfactslogo100.png 100w,
           images/bearfactslogo150.png 150w">
         <h1>Bear Facts Weather</h1>
@@ -124,7 +124,15 @@
           <h3>Email:</h3>
           <p>contact@bearfactsweather.com</p>
         </div>
-        <a  class="map" href="https://www.google.com/maps/place/Idaho/@42.3472397,-111.7594114,10.5z/data=!4m5!3m4!1s0x5358ffa885e499e9:0xd06b300515f78758!8m2!3d44.0682019!4d-114.7420408" alt="Map of Southeat Idaho"><img src="images/map.png" alt="Map Preston ID"></a>
+
+        <a  class="map" href="https://www.google.com/maps/place/Idaho/@42.3472397,-111.7594114,10.5z/data=!4m5!3m4!1s0x5358ffa885e499e9:0xd06b300515f78758!8m2!3d44.0682019!4d-114.7420408" target="_blank">
+          <picture>
+            <source media="(max-width: 150px)" srcset="images/map150.jpg">
+            <source media="(max-width: 300px)" srcset="images/map300.jpg">
+            <source media="(max-width: 600px)" srcset="images/map600.jpg">
+            <img src="images/map600.jpg" alt="Map SE Idaho">
+          </picture>
+        </a>
       </section>
     </section>
 
@@ -138,7 +146,6 @@
   <script src="js/currentdate.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/message.js"></script>
-  <script src="js/windchill.js"></script>
   <script src="js/towns.js"></script>
 </body>
 

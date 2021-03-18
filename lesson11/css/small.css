@@ -151,6 +151,7 @@ main picture.herophoto {
     display: block;
     width: 100%;
     margin: 0;
+    border-radius: 5px;    
     box-shadow: 5px 5px 10px 5px gray;
 }
   
@@ -177,6 +178,7 @@ main picture.herophoto {
 }
 
 .summaryData {
+    text-align: left;
     font-weight: bolder;
     grid-column: 2;
 }
@@ -218,7 +220,23 @@ main picture.herophoto {
     font-size: 1.5rem;
     font-weight: bolder;
 }
- 
+/*---------- Events ---------*/  
+.event h2 {
+    border-bottom: 3px white solid;
+    padding-bottom: 1.25rem;
+}
+.eventBox {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 2px black solid;
+    border-radius: 15px;
+    text-align: center;
+    background-color: #154c87;
+    color: white;
+    font-size: 1rem;
+}
+
+
 /* Article */
 .article {
     width: 100%;
@@ -229,7 +247,6 @@ main picture.herophoto {
 .article img {
     width: 50%;
     float: right;
-    border-radius: 15px;
     margin: .75rem;
 }
 
@@ -308,6 +325,7 @@ form fieldset {
     padding: .5rem 2%;
     max-width: 21rem;   
     box-shadow: 5px 5px 10px 5px gray;
+    justify-self: center;
 }
 
 form legend {
@@ -384,6 +402,7 @@ form label.top input:required:valid {
 
 .stormobject1, .stormobject2 {
     display: none;
+    justify-self: center;
     border-radius: 1rem;
     box-shadow: 5px 5px 10px 5px gray;
     
@@ -402,6 +421,15 @@ footer {
     font-size: .75rem;
     text-align: center;
     width: 100%;
+}
+
+.opm a {
+    text-decoration: none;
+    color: black;
+}
+
+.opm a:hover {
+    color: white;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
