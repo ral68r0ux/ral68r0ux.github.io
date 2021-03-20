@@ -1,148 +1,190 @@
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
+  /*----------- BODY --------------*/
 
+  /*----------- HEADER --------------*/
+  .box-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
 
-/*----------- BODY --------------*/
+  .box-content {
+    width: 100%;
+  }
 
+  /*header img {width: 100px;}*/
+  header h1 {
+    font-size: 2rem;
+  }
+  header div {
+    font-size: 1rem;
+  }
+  header img {width: 100px; }
+  div#anncouncment {
+    font-size: 1.6rem;
+  }
 
+  /*----------- NAVIGATION --------------*/
 
-/*----------- HEADER --------------*/
-.box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 1fr);
+  nav button {
+    margin: -5rem 2%; /* move hamburger -5rem top and bottom from the border and unordered list - 2% gives space left and right of the hamburger*/
+  }
+  nav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
+    background: #154c87; /* Old browsers */
+    background: -moz-linear-gradient(
+      top,
+      #154c87 0%,
+      #7db9e8 100%
+    ); /* FF3.6-15 */
+    background: -webkit-linear-gradient(
+      top,
+      #154c87 0%,
+      #7db9e8 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(
+      to bottom,
+      #154c87 0%,
+      #7db9e8 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#154c87', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  }
+
+  nav button {
+    display: none; /* removes the hamburger button */
+  }
+  nav ul.hide {
+    display: block;
+  } /*force to show in large */
+  nav ul {
+    margin-left: 2%; /* moving nav away from the left side of screen */
+  }
+  nav ul li {
+    float: left; /* change from a column to a row - also include the Clearfix function to small css */
+  }
+
+  nav ul li a {
+    border: none; /* remove the top border */
+    border-right: 1px solid rgba(255, 255, 255, 0.3); /* adding new border on right side - size, type, coloration of traspancey */
+    padding: 0.8rem 0.6rem; /* padding to make better for touch screen use. */
+  }
+  /*----------- MAIN --------------*/
+
+  /*---------- Home Page ----------*/
+  nav ul li a {              /* styling of the navigation buttons */
+    font-size: 1.5rem;  
 }
+  div.cards div {
+    grid-template-columns: 1fr 1fr;
+  }
+  div.cards div:nth-child(odd) picture {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  div.cards div:nth-child(odd) section {
+    grid-column: 1;
+  }
 
-.box-content {
-  grid-column: 2;
+  /*--------- Town Page ----------*/
+  .pagetitle {
+    font-size: 2.25rem;
+  }
+  /*---------- Weather Summary ----------*/
+  .weathersummary {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+  }
+  .weathersummary h3 {
+    font-size: 2rem;
 }
-
-/*header img {width: 100px;}*/
-header h1 {font-size: 2rem;}
-header div {font-size: 1.14rem;}
-
-div#anncouncment {
-  font-size: 1.6rem;
+  .weathersummary p {
+    font-size: 1.5rem;
 }
-
-/*----------- NAVIGATION --------------*/
-
-nav button {
-  margin: -5rem 2%;                /* move hamburger -5rem top and bottom from the border and unordered list - 2% gives space left and right of the hamburger*/
-}
-nav{
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#154c87+0,7db9e8+100 */
-background: #154c87; /* Old browsers */
-background: -moz-linear-gradient(top, #154c87 0%, #7db9e8 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #154c87 0%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #154c87 0%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#154c87', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
-}
-
-nav button {
-  display: none;  /* removes the hamburger button */
-}
-nav ul.hide {display: block;} /*force to show in large */
-nav ul {
-  margin-left: 2%; /* moving nav away from the left side of screen */
-}
-nav ul li {
-  float: left; /* change from a column to a row - also include the Clearfix function to small css */
-}
-
-nav ul li a{
-  border: none; /* remove the top border */
-  border-right: 1px solid rgba(255,255,255,0.3); /* adding new border on right side - size, type, coloration of traspancey */
-  padding: .8rem .60rem; /* padding to make better for touch screen use. */
-}
-/*----------- MAIN --------------*/
-
-/*---------- Home Page ----------*/
-div.cards div {
-  grid-template-columns: 1fr 1fr;
-}
-div.cards div:nth-child(odd) picture {
-  grid-column: 2;
-  grid-row: 1;
-}
-div.cards div:nth-child(odd) section {
-  grid-column: 1;
-}
-
- /*--------- Town Page ----------*/
-.weathersummary {
-  position: absolute;
-}
-
-.forecastBlock {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-}
-/*---------- Events ---------*/  
-.event h2 {
-  font-size: 2.5rem;
-}
-
-.eventBox {
+.forecast, .contactInfo {
   font-size: 1.5rem;
 }
+  .forecastBlock {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+  }
+  /*---------- Events ---------*/
+  .event h2 {
+    font-size: 2.5rem;
+  }
 
-.article img {
-  width: 50%;
-  float: right;
-  padding: 1rem;
+  .eventBox {
+    font-size: 1.5rem;
+  }
+
+  .article img {
+    max-width: 300px;
+    float: right;
+    padding: 1rem;
+  }
+
+/*---------- Contact ----------*/
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 225px auto;
+  }
+
+  .contact-block {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: auto;
+  margin-right: auto;
+  }
+.mapblock {
+  grid-column: 2;
+  grid-row: 1/3;
+  margin-left: auto;
+  margin-right: auto;
 }
+  .map {
+    display: inline-block;
+    width: 100%;
+    max-width: 480px;
+  }
 
-.contact-block {
-  grid-template-columns: 150px 150px auto;
-  grid-template-rows: 60px 60px auto;
-  
-}
+  .map img {
+    border: 3px black solid;
+    border-radius: 15px;
+    width: 100%;
+    box-shadow: 6px 6px 12px 6px rgba(0,0,0,0.5);
+  }
 
-.map {
-  display: inline-block;
-  width: 100%;
-  max-width: 480px;
-  grid-column: 3/4;
-  grid-row: 1/4;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 5px gray;
-}
+  /* Gallery Page Start */
 
-.map img {
-  border-radius: 15px;
-  width: 100%;
-}
+  .photoblock {
+    grid-template-columns: 1fr 1fr;
+  }
 
-/* Gallery Page Start */
+  /* Gallery Page End */
 
-.photoblock {
-  grid-template-columns: 1fr 1fr;
-}
+  /*---------- Storm Center Page Start ----------*/
 
-/* Gallery Page End */
+  div.stormcontainer {
+    margin: 0;
+    position: relative;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20rem 1fr;
+  }
 
-/*---------- Storm Center Page Start ----------*/
+  .stormobject2 {
+    width: 90%;
+    display: block;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+  }
 
+  /*---------- Storm Center Page End ----------*/
 
-
-div.stormcontainer {
-  margin: 0;
-  position: relative;
-  width: 90%;
-  display: grid;
-  grid-template-columns: 20rem 1fr;
-} 
-
-.stormobject2 {
-  width: 90%;
-  display: block;
-  margin-left: 4rem;
-  margin-bottom: 4rem;
-}
-
-/*---------- Storm Center Page End ----------*/
-
-
-/*----------- FOOTER --------------*/
-    
+  /*----------- FOOTER --------------*/
+  footer {
+    font-size: 0.75rem;
+  }
 } /* end of media query */
