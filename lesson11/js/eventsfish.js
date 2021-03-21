@@ -5,7 +5,7 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (jsonObject) {
-    console.table(jsonObject);
+  
     const towns = jsonObject['towns'];
     
     for (let i = 0; i < towns.length; i++) {
@@ -17,7 +17,7 @@ fetch(requestURL)
         
         for (let x = 0; x < towns[i].events.length; x++) {
           let info = document.createElement("p");
-          console.log(towns[i].events[x]);
+          
           info.textContent = towns[i].events[x];        
           box.appendChild(info);
           document.getElementById("box").appendChild(box); 
