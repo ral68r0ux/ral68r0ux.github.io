@@ -1,0 +1,183 @@
+{
+  "members": [
+    {
+      "business": "Ace Hardware",
+      "address": "2556 N 400 W",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 823-2514",
+      "logo": "../jasonimages/logo-ace.jpg",
+      "webaddress": "http://www.acehardware.com"      
+    },
+    {
+      "business": "Advanced Armor Technology",
+      "address": "623 E 2550 N",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 814-2609",
+      "logo": "../jasonimages/logo-advance.jpg",
+      "webaddress": "http://www.advancedarmortechnology.com"
+    },
+    {
+      "business": "Big O Tire",
+      "address": "1893 N 400 E",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 737-4781",
+      "logo": "../jasonimages/logo-bigo.jpg",
+      "webaddress": "http://www.bigotires.com/location/ut-north-ogden-84414/044016"
+    },
+    {
+      "business": "Intermountain North Ogden Clinic",
+      "address": "2400 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 786-7500",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "http://www.intermountainhealthcare.org"
+    },
+    {
+      "business": "Kirt's Drive Inn",
+      "address": "1974 N 400 E",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 782-5350",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "N/A"
+    },
+    {
+      "business": "Lee's Marketplace",
+      "address": "2645 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 782-7800",
+      "logo": "../jasonimages/logo-lees.jpg",
+      "webaddress": "http://www.leesmaketplace.com"
+    },
+    {
+      "business": "Lindquist's North Ogden Mortuary",
+      "address": "2140 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 782-6666",
+      "logo": "../jasonimages/logo-lindquist.jpg",
+      "webaddress": "http://www.linquistmortuary.com"
+    },
+    {
+      "business": "Mrs. Cavanaugh's Chocolates",
+      "address": "1993 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 737-3456",
+      "logo": "../jasonimages/logo-cavanaughs.jpg",
+      "webaddress": "http://www.mrscavanaughs.com"
+    },
+    {
+      "business": "North Ogden Animal Hospital",
+      "address": "1580 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 782-4401",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "http://www.northogdenanimalhospital.com"
+    },
+    {
+      "business": "North Ogden City",
+      "address": "505 E 2600 N",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 782-7211",
+      "logo": "../jasonimages/logo-nocity.jpg",
+      "webaddress": "https://www.northogdencity.com"
+    },{
+      "business": "O'Reilly Auto Parts",
+      "address": "2596 N 300 E",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 564-6059",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "http://www.oreillyauto.com"
+    },
+    {
+      "business": "Papa Murphy's Pizza",
+      "address": "2641 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 786-8686",
+      "logo": "../jasonimages/logo-papamurphy.jpg",
+      "webaddress": "http://locations.papamurphys.com/ut/north-ogden/2641-north-washington-blvd"
+    },
+    {
+      "business": "Pizza Man",
+      "address": "1958 N 500 E",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 782-3000",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "N/A"
+    },
+    {
+      "business": "Pizza Pie Cafe",
+      "address": "1970 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(385) 244-1923",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "http://www.pizzapiecafe.co"
+    },
+    {
+      "business": "Smith's Market Place",
+      "address": "2434 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 917-1977",
+      "logo": "../jasonimages/logo-smiths.jpg",
+      "webaddress": "http://www.smithsfoodanddrug.com"
+    },
+    {
+      "business": "Ultimate Express Carwash",
+      "address": "1853 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(385) 333-4705",
+      "logo": "../jasonimages/logo-na.jpg",
+      "webaddress": "http://www.carwashutah.com"
+    },
+    {
+      "business": "Walker Cinemas",
+      "address": "1610 N Washington Blvd",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 737-9183",
+      "logo": "../jasonimages/logo-walker.jpg",
+      "webaddress": "http://www.walkercinemas.net"
+    },
+    {
+      "business": "Zhang's Chinese Kitchen",
+      "address": "2586 N 400 E",
+      "city": "North Ogden",
+      "state": "UT",
+      "zipcode": "84414",
+      "phonenumber": "(801) 737-3393",
+      "logo": "../jasonimages/logo-zhangs.jpg",
+      "webaddress": "http://www.zhangschinesekitchen.net"
+    }
+  ]
+}

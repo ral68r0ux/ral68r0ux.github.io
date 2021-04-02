@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="North Ogden Chamber of Commerce/Home">
+  <meta name="author" content="Andrew Larsen">
+
+  <!-- This start file was build by Paul Cheney  -->
+  <title>North Ogden Chamber of Commerce</title>
+
+  <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- STYLE SHEETS -->
+  <link href="css/normalize.css" rel="stylesheet">
+  <!-- phone-default -->
+  <link href="css/small.css" rel="stylesheet">
+  <!-- enhance-tablet -->
+  <link href="css/medium.css" rel="stylesheet">
+  <!-- enhance-desktop -->
+  <link href="css/large.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER/NAVIGATION HERE -->
+  <header class="clearfix center">
+    <div class="headcontainer">
+
+      <img srcset="images/logo200.png 320w,
+        images/logo300.png 800w"
+      sizes="(max-width: 560px) 320px, 600px"
+      src="images/logo300.png" alt="Logo">
+      <div>
+        <h1>North Ogden</h1>
+        <h2>Camber of Commerce</h2>
+      </div>
+    </div>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="noogden.html">North Ogden City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- CONTENT HERE -->
+  <main>
+    <div class="pagetitle">
+    <h1>Welcome to the North Ogden Chamber of Commerce</h1>
+    <p>The North Ogden Chamber of Commerce is here to help businesses grow by networking and finding partners. The
+      chamber of commerce also here to help residence and consumers find quality service and community ativities.
+      Business and community coming together.</p>
+    </div>
+
+      <section class="hero">
+        <picture class="herophoto">
+          <source media="(max-width: 400px)" srcset="images/ben300.jpg">
+          <source media="(max-width: 600px)" srcset="images/ben600.jpg">
+          <source media="(max-width: 800px)" srcset="images/ben800.jpg">
+          <img src="images/ben1200.jpg" alt="Mail Box Row">
+        </picture>
+      </section>
+
+    <section class="weathersummary">
+      <h2>Current Weather Summary</h2>
+      <section class="summaryBox">
+        <div class="summaryTitles">
+          <p>Forcast: &nbsp;</p>
+          <p>Tempurature: &nbsp;</p>
+          <p>Wind Chill: &nbsp;</p>
+          <p>Wind Speed: &nbsp;</p>
+          <p>Humidity: &nbsp;</p>
+        </div>
+        <div class="summaryData">
+          <p><span id="currentForecast"></span></p>
+          <p><span id="currentTemp"></span></p>
+          <p><span id="windChill"></span></p>
+          <p><span id="windSpeed"></span></p>
+          <p><span id="currentHumidity"></span></p>          
+        </div>
+      </section>
+    </section>
+
+    <div class="cards"></div>
+    
+    <section>
+      <h2>Membership Packages</h2>
+      <section class="packageBox">
+        <div class="packageInfo">
+          <div class="packageMember">
+            <h3>Membership Package</h3>
+            <p>Networking Workshops</p>
+            <p>Advertising Discounts</p>
+            <p>Monthly News Letter</p>
+            <p>"Member-Only" resources</p>
+            <p>Listing on Searchable Member Directory</p>
+
+          </div>
+          <div class="packagePartner">
+            <h3>Partnership Package</h3>
+            <p>All of the benifits of the Membership Package</p>
+            <p>Annual Gala Tickets</p>
+            <p>Chamber Web Spotlight</p>
+            <p>Larger Discounts</p>
+            <p>Partners Annual Event Passes (2)</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section>Local events</section>
+
+    <section class="forecast">
+      <h2>Three Day Forecast</h2> 
+      <div class="forecastBlock" id="card"></div>
+    </section>
+
+    <section class="contact">
+      <h2>Office</h2>
+      <p>North Ogden Camber of Commerce</p>
+      <p>2739 N 400 N</p>
+      <p>North Ogden UT 84414</p>
+      
+      <p>Phone: (801) 555-3131</p>
+      <p>Email: contact@northogdenchamber.com</p>
+      
+      <a href="https://www.facebook.com/"><img src="images/iconFacebook.png"></a>
+      <a href="https://www.instagram.com"><img src="images/iconInstagram.png"></a>
+      <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png"></a>
+      <a href="https://twitter.com/"><img src="images/iconTwitter.png"></a>
+      <a href="https://www.youtube.com/"><img src="images/iconYoutube.png"></a>
+      
+      
+    </section>
+  </main>
+
+  <!-- FOOTER HERE -->
+  <footer>
+    &copy; 2021 &bull; North Ogden Chamber of Commerce<br>
+    <span id="currentdate"></span>
+  </footer>
+  <script src="js/currentdate.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
