@@ -47,7 +47,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-5350",
-      "logo": "/jasonimages/logo-na.png",
+      "logo": "/jsonimages/logo-na.png",
       "webaddress": "N/A"
     },
     {
@@ -57,7 +57,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-7800",
-      "logo": "/jasonimages/logo-lees.png",
+      "logo": "/jsonimages/logo-lees.png",
       "webaddress": "http://www.leesmaketplace.com"
     },
     {
@@ -67,7 +67,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-6666",
-      "logo": "/jasonimages/logo-lindquist.png",
+      "logo": "/jsonimages/logo-lindquist.png",
       "webaddress": "http://www.linquistmortuary.com"
     },
     {
@@ -77,7 +77,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 737-3456",
-      "logo": "/jasonimages/logo-cavanaughs.png",
+      "logo": "/jsonimages/logo-cavanaughs.png",
       "webaddress": "http://www.mrscavanaughs.com"
     },
     {
@@ -87,7 +87,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-4401",
-      "logo": "/jasonimages/logo-na.png",
+      "logo": "/jsonimages/logo-na.png",
       "webaddress": "http://www.northogdenanimalhospital.com"
     },
     {
@@ -97,7 +97,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-7211",
-      "logo": "/jasonimages/logo-nocity.png",
+      "logo": "/jsonimages/logo-nocity.png",
       "webaddress": "https://www.northogdencity.com"
     },{
       "business": "O'Reilly Auto Parts",
@@ -106,7 +106,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 564-6059",
-      "logo": "/jasonimages/logo-na.png",
+      "logo": "/jsonimages/logo-na.png",
       "webaddress": "http://www.oreillyauto.com"
     },
     {
@@ -116,7 +116,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 786-8686",
-      "logo": "/jasonimages/logo-papamurphy.png",
+      "logo": "/jsonimages/logo-papamurphy.png",
       "webaddress": "http://locations.papamurphys.com/ut/north-ogden/2641-north-washington-blvd"
     },
     {
@@ -126,7 +126,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-3000",
-      "logo": "/jasonimages/logo-na.png",
+      "logo": "/jsonimages/logo-na.png",
       "webaddress": "N/A"
     },
     {
@@ -136,7 +136,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(385) 244-1923",
-      "logo": "/jasonimages/logo-na.png",
+      "logo": "/jsonimages/logo-na.png",
       "webaddress": "http://www.pizzapiecafe.co"
     },
     {
@@ -146,7 +146,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 917-1977",
-      "logo": "/jasonimages/logo-smiths.png",
+      "logo": "/jsonimages/logo-smiths.png",
       "webaddress": "http://www.smithsfoodanddrug.com"
     },
     {
@@ -156,7 +156,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(385) 333-4705",
-      "logo": "/jasonimages/logo-na.png",
+      "logo": "/jsonimages/logo-na.png",
       "webaddress": "http://www.carwashutah.com"
     },
     {
@@ -166,7 +166,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 737-9183",
-      "logo": "/jasonimages/logo-walker.png",
+      "logo": "/jsonimages/logo-walker.png",
       "webaddress": "http://www.walkercinemas.net"
     },
     {
@@ -176,7 +176,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 737-3393",
-      "logo": "/jasonimages/logo-zhangs.png",
+      "logo": "/jsonimages/logo-zhangs.png",
       "webaddress": "http://www.zhangschinesekitchen.net"
     }
   ]
