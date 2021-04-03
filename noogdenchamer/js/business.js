@@ -1,45 +1,61 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://ral68r0ux.github.io/nobusiness.json';
 
 fetch(requestURL) 
   .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-   
-    const towns = jsonObject['towns'];
+    return response.json();})
+  .then(function (membersObject) {
+
+    const members = membersObject['members'];
+    console.log(members);
+    const one = Math.floor(Math.random() * members.length);
+    let two = Math.floor(Math.random() * members.length);
+    let three = Math.floor(Math.random() * members.length);
+console.log(one);
+console.log(two);
+console.log(three);
+    while (one === two|| one === three || two === three) {
+      two = Math.floor(Math.random() * members.length);
+      three = Math.floor(Math.random() * members.length);
+    }
+    console.log(one);
+    console.log(two);
+    console.log(three);
     
-    for (let i = 0; i < towns.length; i++) {
-      if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven" ) {
+    for (let i = 0; i < members.length; i++) {
+      if (i == one || i == two || i == three) {
         let card = document.createElement('div');
         
         let info = document.createElement('section');
         let photo = document.createElement('picture');
 
-        let h2 = document.createElement('h2');
         let h3 = document.createElement('h3');
-        let townImage = document.createElement('img');
-        let yearFounded = document.createElement('p');
-        let currentPop = document.createElement('p');
-        let aveRainfall = document.createElement('p');
+        let logoImage = document.createElement('img');
+        let street = document.createElement('p');
+        let cityLine = document.createElement('p');
+        let phoneNumber = document.createElement('p');
+        let webAddressText = document.createElement('p');
+        let webAddress = document.createElement('a');
 
-        h2.textContent = towns[i].name;
-        h3.textContent = towns[i].motto;
-        townImage.setAttribute('src', "images/" + towns[i].photo);
-        townImage.setAttribute('alt', towns[i].name);
-        townImage.setAttribute('width', '400');
-        townImage.setAttribute('height', 'auto');
-        yearFounded.textContent= "Year Founded: "+ towns[i].yearFounded;
-        currentPop.textContent = "Current Population: " + towns[i].currentPopulation;
-        aveRainfall.textContent = "Average Rain Fall: " + towns[i].averageRainfall + " in.";
+        logoImage.setAttribute('src', members[i].logo);
+        logoImage.setAttribute('alt', 'Logo');
+        logoImage.setAttribute('width', '150');
+        logoImage.setAttribute('height', 'auto');
+        h3.textContent = members[i].business;
+        street.textContent= members[i].address;
+        cityLine.textContent= members[i].city + " " + members[i].state + ", " + members[i].zipcode;
+        phoneNumber.textContent = members[i].phonenumber;
+        webAddressText.textContent = members[i].webaddress;
+        webAddress.setAttribute('href', members[i].webaddress);
 
-        photo.appendChild(townImage);
+        photo.appendChild(logoImage);
         card.appendChild(photo);
 
-        info.appendChild(h2);
         info.appendChild(h3);
-        info.appendChild(yearFounded);
-        info.appendChild(currentPop);
-        info.appendChild(aveRainfall);
+        info.appendChild(street);
+        info.appendChild(cityLine);
+        info.appendChild(phoneNumber);
+        info.appendChild(webAddressText)
+        info.appendChild(webAddress)
         card.appendChild(info);
 
         document.querySelector('div.cards').appendChild(card); 
