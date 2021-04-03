@@ -24,17 +24,19 @@ console.log(three);
     for (let i = 0; i < members.length; i++) {
       if (i == one || i == two || i == three) {
         let card = document.createElement('div');
-        
+        card.setAttribute('class', 'businessBlock');
+
         let info = document.createElement('section');
+        info.setAttribute('class', 'infoBlock');
         let photo = document.createElement('picture');
+        photo.setAttribute('class', 'photoBlock');
 
         let h3 = document.createElement('h3');
         let logoImage = document.createElement('img');
         let street = document.createElement('p');
         let cityLine = document.createElement('p');
         let phoneNumber = document.createElement('p');
-        let webAddressText = document.createElement('p');
-        let webAddress = document.createElement('a');
+        let domain = document.createElement('p');
 
         logoImage.setAttribute('src', members[i].logo);
         logoImage.setAttribute('alt', 'Logo');
@@ -44,8 +46,7 @@ console.log(three);
         street.textContent= members[i].address;
         cityLine.textContent= members[i].city + " " + members[i].state + ", " + members[i].zipcode;
         phoneNumber.textContent = members[i].phonenumber;
-        webAddressText.textContent = members[i].webaddress;
-        webAddress.setAttribute('href', members[i].webaddress);
+        domain.textContent = members[i].webaddress;
 
         photo.appendChild(logoImage);
         card.appendChild(photo);
@@ -54,8 +55,7 @@ console.log(three);
         info.appendChild(street);
         info.appendChild(cityLine);
         info.appendChild(phoneNumber);
-        info.appendChild(webAddressText)
-        info.appendChild(webAddress)
+        info.appendChild(domain);
         card.appendChild(info);
 
         document.querySelector('div.cards').appendChild(card); 

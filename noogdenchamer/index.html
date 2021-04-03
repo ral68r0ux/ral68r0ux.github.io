@@ -34,9 +34,7 @@
     <div class="headcontainer">
 
       <img srcset="images/logo200.png 320w,
-        images/logo300.png 800w"
-      sizes="(max-width: 560px) 320px, 600px"
-      src="images/logo300.png" alt="Logo">
+        images/logo300.png 800w" sizes="(max-width: 560px) 320px, 600px" src="images/logo300.png" alt="Logo">
       <div>
         <h1>North Ogden</h1>
         <h2>Camber of Commerce</h2>
@@ -58,20 +56,20 @@
   <!-- CONTENT HERE -->
   <main>
     <div class="pagetitle">
-    <h1>Welcome to the North Ogden Chamber of Commerce</h1>
-    <p>The North Ogden Chamber of Commerce is here to help businesses grow by networking and finding partners. The
-      chamber of commerce also here to help residence and consumers find quality service and community ativities.
-      Business and community coming together.</p>
+      <h1>Welcome to the North Ogden Chamber of Commerce</h1>
+      <p>The North Ogden Chamber of Commerce is here to help businesses grow by networking and finding partners. The
+        chamber of commerce also here to help residence and consumers find quality service and community ativities.
+        Business and community coming together.</p>
     </div>
 
-      <section class="hero">
-        <picture class="herophoto">
-          <source media="(max-width: 400px)" srcset="images/ben300.jpg">
-          <source media="(max-width: 600px)" srcset="images/ben600.jpg">
-          <source media="(max-width: 800px)" srcset="images/ben800.jpg">
-          <img src="images/ben1200.jpg" alt="Mail Box Row">
-        </picture>
-      </section>
+    <section class="hero">
+      <picture class="herophoto">
+        <source media="(max-width: 400px)" srcset="images/ben300.jpg">
+        <source media="(max-width: 600px)" srcset="images/ben600.jpg">
+        <source media="(max-width: 800px)" srcset="images/ben800.jpg">
+        <img src="images/ben1200.jpg" alt="Mail Box Row">
+      </picture>
+    </section>
 
     <section class="weathersummary">
       <h2>Current Weather Summary</h2>
@@ -88,42 +86,47 @@
           <p><span id="currentTemp"></span></p>
           <p><span id="windChill"></span></p>
           <p><span id="windSpeed"></span></p>
-          <p><span id="currentHumidity"></span></p>          
+          <p><span id="currentHumidity"></span></p>
         </div>
       </section>
     </section>
 
     <div class="cards"></div>
-    
-    <section>
+
+    <section class="membershipOffer">
       <h2>Membership Packages</h2>
       <section class="packageBox">
         <div class="packageInfo">
           <div class="packageMember">
             <h3>Membership Package</h3>
-            <p>Networking Workshops</p>
-            <p>Advertising Discounts</p>
-            <p>Monthly News Letter</p>
-            <p>"Member-Only" resources</p>
-            <p>Listing on Searchable Member Directory</p>
+            <ul>
+              <li>Networking Workshops</li>
+              <li>Advertising Discounts</li>
+              <li>Monthly News Letter</li>
+              <li>"Member-Only" resources</li>
+              <li>Listing on Searchable Member Directory</li>
+            </ul>
 
           </div>
           <div class="packagePartner">
             <h3>Partnership Package</h3>
-            <p>All of the benifits of the Membership Package</p>
-            <p>Annual Gala Tickets</p>
-            <p>Chamber Web Spotlight</p>
-            <p>Larger Discounts</p>
-            <p>Partners Annual Event Passes (2)</p>
+            <ul>
+              <li>All of the benifits of the Membership Package</li>
+              <li>Annual Gala Tickets</li>
+              <li>Chamber Web Spotlight</li>
+              <li>Larger Discounts</li>
+              <li>Partners Annual Event Passes (2)</li>
+            </ul>
           </div>
         </div>
+        <a class="button" href="join.html">Become a Member</a>
       </section>
     </section>
 
     <section>Local events</section>
 
     <section class="forecast">
-      <h2>Three Day Forecast</h2> 
+      <h2>Three Day Forecast</h2>
       <div class="forecastBlock" id="card"></div>
     </section>
 
@@ -132,17 +135,17 @@
       <p>North Ogden Camber of Commerce</p>
       <p>2739 N 400 N</p>
       <p>North Ogden UT 84414</p>
-      
+
       <p>Phone: (801) 555-3131</p>
       <p>Email: contact@northogdenchamber.com</p>
-      
+
       <a href="https://www.facebook.com/"><img src="images/iconFacebook.png"></a>
       <a href="https://www.instagram.com"><img src="images/iconInstagram.png"></a>
       <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png"></a>
       <a href="https://twitter.com/"><img src="images/iconTwitter.png"></a>
       <a href="https://www.youtube.com/"><img src="images/iconYoutube.png"></a>
-      
-      
+
+
     </section>
   </main>
 
@@ -153,8 +156,9 @@
   </footer>
   <script src="js/currentdate.js"></script>
   <script src="js/scripts.js"></script>
-  <cript src="js/weather.js"></script>
-  <script src="js/business.js"></script>
+  <cript src="js/weather.js">
+    </script>
+    <script src="js/business.js"></script>
 </body>
 
 </html>

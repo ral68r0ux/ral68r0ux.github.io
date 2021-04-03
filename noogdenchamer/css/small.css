@@ -19,9 +19,12 @@ h1, h2, h3, h4, header, footer {
 }
 
 h1 {
-  font-size: 1.18rem;
+  font-size: 1.25rem;
 }
 h2 {
+  font-size: 1rem;
+}
+h3 {
   font-size: .9rem;
 }
 
@@ -118,7 +121,7 @@ main {
   margin: 0 2%;
 }
 p{
-  font-size: .9rem;
+  /*font-size: .9rem;*/
 }
 /*----- Hero -----*/
 .pagetitle h1{
@@ -159,7 +162,7 @@ main picture.herophoto {
 .weathersummary h2{
   margin: 0;
   padding: .25rem;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
 }
 .weathersummary p {
   margin: 0;
@@ -174,6 +177,81 @@ main picture.herophoto {
   text-align: left;
   font-weight: bolder;
   grid-column: 2;
+}
+/*----- Ads -----*/
+.businessBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 2px solid #000;
+  margin: 10px 0 10px 0;
+  background-color: rgb(140, 140, 140);
+  box-shadow: 0 0 30px #000;
+  border-radius: 5px;
+
+}
+.photoBlock {
+  justify-self: center;
+  padding: 4%;
+}
+.infoBlock{
+  margin: 4%;
+  background-color: #fff;
+  padding: 4%;
+  border-radius: 5px;
+}
+/*----- Offer -----*/
+.membershipOffer {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 15px 5px #000;
+  border-radius: 5px;
+  
+}
+.membershipOffer h2 {
+  text-align: center;
+}
+.packageBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  
+}
+.packageMember, .packagePartner {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 4%
+}
+.packageMember p, .packagePartner p {
+  text-decoration: dotted;
+}
+.packageMember {
+  background-color: #479ed7;
+}
+.packagePartner {
+  background-color: #2e406b;
+  color: #fff;
+}
+.button {
+  background-color: #0000fe;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px grey;
+  width: 75%;
+  max-width: 18rem;
+  margin: 0 0 2rem 0;
+  padding: 7px;
+  color: #fff;
+  justify-self: center;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #0000fe;
+}
 }
 /*----- 3 day -----*/
 .forecast {
@@ -207,6 +285,7 @@ main picture.herophoto {
   font-size: 1.5rem;
   font-weight: bolder;
 }
+
 /*----------- FOOTER --------------*/
 footer {
   background-color: #0000fe;
