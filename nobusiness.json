@@ -138,7 +138,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-3000",
-      "logo": "/jsonimages/logo-na.png",
+      "logo": "/jsonimages/logo-pizzaman.png",
       "webaddress": "Website N/A",
       "imageurl": "/jsonimages/pizzaman300.png"  
     },
@@ -171,7 +171,7 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(385) 333-4705",
-      "logo": "/jsonimages/logo-na.png",
+      "logo": "/jsonimages/logo-ultimate.png",
       "webaddress": "www.carwashutah.com",
       "imageurl": "/jsonimages/carwash300.png"  
     },
