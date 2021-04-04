@@ -67,6 +67,7 @@ nav ul li a {
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
 }
 
 /*----- Offer -----*/
@@ -144,6 +145,7 @@ nav ul li a {
 .joinchamber, .commentcontainer {
   display: grid;
   grid-template-columns: 1fr 1fr;
+
 }
 .joinchamber fieldset, .commentcontainer fieldset {
   justify-self: center;
