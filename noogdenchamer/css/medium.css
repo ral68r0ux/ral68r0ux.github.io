@@ -10,6 +10,9 @@ h1 {
 h2 {
   font-size: 1.75rem;
 }
+h3 {
+  font-size: 1.55rem;
+}
 p{
   font-size: 1.4rem;
 }
@@ -53,9 +56,107 @@ nav ul li a {
   padding: 0.8rem 0.6rem;
 }
 /*----------- MAIN --------------*/
+/*----- weather summary -----*/
+.weathersummary {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
 
+/*----- Ads -----*/
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+/*----- Offer -----*/
+.packageBox {
+  grid-template-columns: 1fr 1fr;  
+  grid-template-rows: 1fr auto;
+}
+.packageMember {
+  grid-column: 1;
+  grid-row: 1;
+}
+.packagePartner {
+  grid-column: 2;
+  grid-row: 1;
+}
+.membership {
+  grid-row: 2;
+  grid-column: 1/3;
+}
 
+/*----- Event -----*/
+.float {
+  position: absolute;
+  top: 3rem;
+  left: 28rem;
+  margin-right: 2rem;
+}
+.follow picture img {
+  width: 100%;
+  max-width: 400px;
+}
+.group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.trail {
+  grid-column: 1;
+  justify-self: center;
+}
+.parade {
+  grid-column: 2;
+  justify-self: center;
+}
+
+/*----- 3 day -----*/
+
+.forecastBlock {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*----- contact -----*/
+.contact {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 15px 5px #000;
+  border-radius: 5px;
+  align-self: center;
+}
+.contact h2{
+  background-color: #0000fe;
+  color: #fff;
+  text-align: center;
+}
+.contact p {
+  margin: 0 6%;
+}
+.contact .media{
+  padding: 2rem;
+  text-align: center;
+}
+.contact .media a{
+  padding: 15px;
+}
+/*----- forms -----*/
+.joinchamber, .commentcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.joinchamber fieldset, .commentcontainer fieldset {
+  justify-self: center;
+}
+/*----- flag pannel -----*/
+.flagPannel {
+  display: block;
+  justify-self: center;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px 5px gray;  
+  width: 100%;
+  max-width: 200px;
+}
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

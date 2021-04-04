@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Home of the North Ogden Chamber of Commerce">
-  <meta name="author" content="John Doe">
+  <meta name="description" content="North Ogden Chamber of Commerce/Home">
+  <meta name="author" content="Andrew Larsen">
 
   <!-- This start file was build by Paul Cheney  -->
   <title>North Ogden Chamber of Commerce</title>
@@ -13,8 +13,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.ico">
+
   <!-- STYLE SHEETS -->
   <link href="css/normalize.css" rel="stylesheet">
   <!-- phone-default -->
@@ -23,43 +26,127 @@
   <link href="css/medium.css" rel="stylesheet">
   <!-- enhance-desktop -->
   <link href="css/large.css" rel="stylesheet">
-
-
-
 </head>
 
 <body>
-  <!-- HEADER HERE -->
-  <header>
-    <h1>North Ogden</h1>
-    <h2>Camber of Commerce</h2>
+  <!-- HEADER/NAVIGATION HERE -->
+  <header class="clearfix center">
+    <div class="headcontainer">
+
+      <img srcset="images/logo200.png 320w,
+        images/logo300.png 800w" sizes="(max-width: 560px) 320px, 600px" src="images/logo300.png" alt="Logo">
+      <div>
+        <h1>North Ogden</h1>
+        <h2>Camber of Commerce</h2>
+      </div>
+    </div>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="noogden.html">North Ogden City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-
-  <!-- NAVIGATION HERE -->
-  <nav class="clearfix">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li class="active"><a href="noogden.html">North Ogden City</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-
 
   <!-- CONTENT HERE -->
   <main>
-    <h1>Products</h1>
-    <p>The page name should almost exactly match the menu item. </p>
+    <div class="road">
+      <h1>400 E/2600 N Road Widening</h1>
+      <picture class="photo">
+        <source media="(max-width: 400px)" srcset="images/rcwashington2-150.jpg">
+        <source media="(max-width: 600px)" srcset="images/rcwashington2-300.jpg">
+        <img src="images/rcwashington2-400.jpg" alt="Flag in Canyon">
+      </picture>
+      <p class="center">This page will be updated every two weeks following project meetings with UDOT, unless changes occur before.
+        Most recent updates will appear first.
+        Project specific concerns can be addressed by calling UDOT at (385) 955-2846 or sending an email to
+        nogdenimprovements@utah.gov once the project begins.
+
+        Want to be added to a bi-weekly update mailing list? Email nogdenimprovements@utah.gov with 'SUBSCRIBE' in the
+        subject line.</p>
+
+      <h2> March 24-March 31:</h2>
+      <picture class="photo">
+        <source media="(max-width: 400px)" srcset="images/rcwashington3-150.jpg">
+        <source media="(max-width: 600px)" srcset="images/rcwashington3-300.jpg">
+        <img src="images/rcwashington3-400.jpg" alt="Flag in Canyon">
+      </picture>
+      <p>Current projects on the road will continue moving forward without any real changes.
+        Utility companies will be doing various scopes of work and some areas may be affected by outages. Individuals or
+        business owners will be notified directly by the utility company. If you are a tenant, please follow up with
+        your landlord to see if there is an outage scheduled that may affect you.</p>
+        <p><a href="https://www.northogdencity.com/publicworks/page/400-e2600-n-road-widening">Full article click here.</a></p>
+       
+    </div>
+
+    <div class="noOgden">
+      <h1>About North Ogden</h1>
+      <p>Among the first people to dwell in the North Ogden area were Native American Indians. Most of these people were
+        Shoshone, belonging to tribes such as the Paiutes, Utes, Shoshones, Goshutes, and Bannocks. These bands led a
+        nomadic lifestyle with their annual movements driven by the availability of water, edible vegetation, and wild
+        game. The Shoshone called the area “Opecarry,” which translated to “stick in the head.” Their trails connected
+        the North Ogden territory with areas now known as Liberty, Huntsville, Eden, Ogden, and Cache Valley, Utah.</p>
+      <p>European Americans first visited the North Ogden area in the early 1820s. They were primarily trappers who were
+        more interested in the rich harvest of beaver furs than in establishing permanent settlements. The first record
+        of a visit to “Ogden Hole” (now known as North Ogden) was in 1821 by a trapper named Etienne Provost, who farmed
+        the area along with others until about 1844, when trapper Miles Goodyear purchased most of the land from Ogden
+        Canyon to North Ogden Canyon. The Ogden name derived from Peter Skeen Ogden <a
+          href="https://www.northogdencity.com/community/page/about-north-ogden">Full article click here.</a> </p>
+    </div>
+
+    <div class="cherryDays">
+      <h1>Cherry Days History</h1>
+      <p>In 1932 a group of civic and church leaders in North Ogden formed a committee to improve the cherry market
+        throughout the Western states. They started an annual community celebration to call attention to the size, color
+        and flavor of their cherries and to acquaint people with the beauty of the area and the high quality of
+        community and family life. 28 growers from North Ogden and 7 from out of town contributed cherries to an exhibit
+        of 166 cases, believed to be the largest display of cherries ever seen in Utah. Everyone ate free cherries. The
+        first slogan to help popularize North Ogden was “North Ogden, Where Flavor Fills the Fruit.”</p>
+      <p>n 1954 the cherries of North Ogden received wide-spread recognition when Mrs. Beverly Erickson <a
+          href="http://www.northogdencherrydays.com/2013/09/in-1932-group-of-civic-and-church.html">Full article click
+          here.</a></p>
+    </div>
+
+
+
+    <section class="contact">
+      <div class="contactInfo">
+        <h2>Office</h2>
+        <div class="address">
+          <p>North Ogden Camber of Commerce</p>
+          <p>2739 N 400 N</p>
+          <p>North Ogden UT 84414</p>
+          <br>
+          <p>Phone: (801) 555-3131</p>
+          <p>Email: contact@northogdenchamber.com</p>
+        </div>
+      </div>
+      <div class="media">
+        <a href="https://www.facebook.com/"><img src="images/iconFacebook.png" width="50px"></a>
+        <a href="https://www.instagram.com"><img src="images/iconInstagram.png" width="50px"></a>
+        <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png" width="50px"></a>
+        <a href="https://twitter.com/"><img src="images/iconTwitter.png" width="50px"></a>
+        <a href="https://www.youtube.com/"><img src="images/iconYoutube.png" width="50px"></a>
+      </div>
+
+
+    </section>
   </main>
 
   <!-- FOOTER HERE -->
   <footer>
-    &copy; 2021 &bull; North Ogden Chamber of Commerce
-    Todays Date
+    &copy; 2021 &bull; North Ogden Chamber of Commerce<br>
+    <span id="currentdate"></span>
   </footer>
-  <script>  </script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/weather.js">
+  </script>
+  <script src="js/business.js"></script>
 </body>
 
 </html>

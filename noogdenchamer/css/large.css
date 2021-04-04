@@ -16,7 +16,23 @@
 
 
 /*----------- MAIN --------------*/
+/*----- weather summary -----*/
+.weathersummary {
+  position: absolute;
+  bottom: 3rem;
+  right: 3rem;
+}
 
+/*------ ads ------*/
+div.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.float {
+  left: 45rem;
+  
+}
 
 
 /*----------- FOOTER --------------*/

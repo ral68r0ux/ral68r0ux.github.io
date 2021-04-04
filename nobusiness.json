@@ -8,7 +8,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 823-2514",
       "logo": "/jsonimages/logo-ace.png",
-      "webaddress": "www.acehardware.com"      
+      "webaddress": "www.acehardware.com",
+      "imageurl": "/jsonimages/ace300.png"  
     },
     {
       "business": "Advanced Armor Technology",
@@ -18,7 +19,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 814-2609",
       "logo": "/jsonimages/logo-advance.png",
-      "webaddress": "www.advancedarmortechnology.com"
+      "webaddress": "www.advancedarmortechnology.com",
+      "imageurl": "/jsonimages/advance300.png"  
     },
     {
       "business": "Big O Tire",
@@ -28,7 +30,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 737-4781",
       "logo": "/jsonimages/logo-bigo.png",
-      "webaddress": "www.bigotires.com"
+      "webaddress": "www.bigotires.com",
+      "imageurl": "/jsonimages/bigotires300.png"  
     },
     {
       "business": "Intermountain North Ogden Clinic",
@@ -38,7 +41,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 786-7500",
       "logo": "/jsonimages/logo-na.png",
-      "webaddress": "www.intermountainhealthcare.org"
+      "webaddress": "www.intermountainhealthcare.org",
+      "imageurl": "/jsonimages/ihc300.png"  
     },
     {
       "business": "Kirt's Drive Inn",
@@ -48,7 +52,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 782-5350",
       "logo": "/jsonimages/logo-na.png",
-      "webaddress": "Website N/A"
+      "webaddress": "Website N/A",
+      "imageurl": "/jsonimages/kirts300.png"  
     },
     {
       "business": "Lee's Marketplace",
@@ -58,7 +63,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 782-7800",
       "logo": "/jsonimages/logo-lees.png",
-      "webaddress": "www.leesmaketplace.com"
+      "webaddress": "www.leesmaketplace.com",
+      "imageurl": "/jsonimages/lees300.png"  
     },
     {
       "business": "Lindquist's North Ogden Mortuary",
@@ -68,7 +74,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 782-6666",
       "logo": "/jsonimages/logo-lindquist.png",
-      "webaddress": "www.linquistmortuary.com"
+      "webaddress": "www.linquistmortuary.com",
+      "imageurl": "/jsonimages/lindquist300.png"  
     },
     {
       "business": "Mrs. Cavanaugh's Chocolates",
@@ -78,7 +85,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 737-3456",
       "logo": "/jsonimages/logo-cavanaughs.png",
-      "webaddress": "www.mrscavanaughs.com"
+      "webaddress": "www.mrscavanaughs.com",
+      "imageurl": "/jsonimages/cavanaugh300.png"  
     },
     {
       "business": "North Ogden Animal Hospital",
@@ -87,8 +95,9 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(801) 782-4401",
-      "logo": "/jsonimages/logo-na.png",
-      "webaddress": "www.northogdenanimalhospital.com"
+      "logo": "/jsonimages/logo-noahospital.png",
+      "webaddress": "www.northogdenanimalhospital.com",
+      "imageurl": "/jsonimages/noanimalhospital300.png"  
     },
     {
       "business": "North Ogden City",
@@ -98,7 +107,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 782-7211",
       "logo": "/jsonimages/logo-nocity.png",
-      "webaddress": "www.northogdencity.com"
+      "webaddress": "www.northogdencity.com",
+      "imageurl": "/jsonimages/cityoffice300.png"  
     },{
       "business": "O'Reilly Auto Parts",
       "address": "2596 N 300 E",
@@ -107,7 +117,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 564-6059",
       "logo": "/jsonimages/logo-na.png",
-      "webaddress": "www.oreillyauto.com"
+      "webaddress": "www.oreillyauto.com",
+      "imageurl": "/jsonimages/oreilly300.png"  
     },
     {
       "business": "Papa Murphy's Pizza",
@@ -117,7 +128,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 786-8686",
       "logo": "/jsonimages/logo-papamurphy.png",
-      "webaddress": "www.papamurphys.com/"
+      "webaddress": "www.papamurphys.com/",
+      "imageurl": "/jsonimages/papamurphy300.png"  
     },
     {
       "business": "Pizza Man",
@@ -127,7 +139,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 782-3000",
       "logo": "/jsonimages/logo-na.png",
-      "webaddress": "Website N/A"
+      "webaddress": "Website N/A",
+      "imageurl": "/jsonimages/pizzaman300.png"  
     },
     {
       "business": "Pizza Pie Cafe",
@@ -136,8 +149,9 @@
       "state": "UT",
       "zipcode": "84414",
       "phonenumber": "(385) 244-1923",
-      "logo": "/jsonimages/logo-na.png",
-      "webaddress": "www.pizzapiecafe.co"
+      "logo": "/jsonimages/logo-pizzapie.png",
+      "webaddress": "www.pizzapiecafe.co",
+      "imageurl": "/jsonimages/pizzapie300.png"  
     },
     {
       "business": "Smith's Market Place",
@@ -147,7 +161,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 917-1977",
       "logo": "/jsonimages/logo-smiths.png",
-      "webaddress": "www.smithsfoodanddrug.com"
+      "webaddress": "www.smithsfoodanddrug.com",
+      "imageurl": "/jsonimages/smiths300.png"  
     },
     {
       "business": "Ultimate Express Carwash",
@@ -157,7 +172,8 @@
       "zipcode": "84414",
       "phonenumber": "(385) 333-4705",
       "logo": "/jsonimages/logo-na.png",
-      "webaddress": "www.carwashutah.com"
+      "webaddress": "www.carwashutah.com",
+      "imageurl": "/jsonimages/carwash300.png"  
     },
     {
       "business": "Walker Cinemas",
@@ -167,7 +183,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 737-9183",
       "logo": "/jsonimages/logo-walker.png",
-      "webaddress": "www.walkercinemas.net"
+      "webaddress": "www.walkercinemas.net",
+      "imageurl": "/jsonimages/walker300.png"  
     },
     {
       "business": "Zhang's Chinese Kitchen",
@@ -177,7 +194,8 @@
       "zipcode": "84414",
       "phonenumber": "(801) 737-3393",
       "logo": "/jsonimages/logo-zhangs.png",
-      "webaddress": "www.zhangschinesekitchen.net"
+      "webaddress": "www.zhangschinesekitchen.net",
+      "imageurl": "/jsonimages/zhangs300.png"  
     }
   ]
 }

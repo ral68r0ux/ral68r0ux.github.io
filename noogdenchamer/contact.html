@@ -3,17 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Home of the North Ogden Chamber of Commerce">
-  <meta name="author" content="John Doe">
+  <meta name="description" content="North Ogden Chamber of Commerce/Home">
+  <meta name="author" content="Andrew Larsen">
 
   <!-- This start file was build by Paul Cheney  -->
-  <title>North Ogden Chamber of Commerce/Contact</title>
+  <title>North Ogden Chamber of Commerce</title>
 
   <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.ico">
 
   <!-- STYLE SHEETS -->
   <link href="css/normalize.css" rel="stylesheet">
@@ -23,43 +26,125 @@
   <link href="css/medium.css" rel="stylesheet">
   <!-- enhance-desktop -->
   <link href="css/large.css" rel="stylesheet">
-
-
-
 </head>
 
 <body>
-  <!-- HEADER HERE -->
-  <header>
-    <h1>North Ogden</h1>
-    <h2>Camber of Commerce</h2>
+  <!-- HEADER/NAVIGATION HERE -->
+  <header class="clearfix center">
+    <div class="headcontainer">
+
+      <img srcset="images/logo200.png 320w,
+        images/logo300.png 800w" sizes="(max-width: 560px) 320px, 600px" src="images/logo300.png" alt="Logo">
+      <div>
+        <h1>North Ogden</h1>
+        <h2>Camber of Commerce</h2>
+      </div>
+    </div>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="noogden.html">North Ogden City</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-
-  <!-- NAVIGATION HERE -->
-  <nav class="clearfix">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="noogden.html">North Ogden City</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li class="active"><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
 
   <!-- CONTENT HERE -->
   <main>
-    <h1>Contact</h1>
-    <p>The page name should almost exactly match the menu item. </p>
+
+    <h2>Board of Directors:</h2>
+    <section class="board">
+      <div class="title">
+        <p>Chairman: &nbsp;</p>
+        <p>Board Member: &nbsp;</p>
+        <p>Board Member: &nbsp;</p>
+        <p>Board Member: &nbsp;</p>
+        <p>Board Member: &nbsp;</p>
+        <p>Board Member: &nbsp;</p>
+        <p>Board Member: &nbsp;</p>
+      </div>
+      <div class="names">
+        <p>Lily Tomlan</p>
+        <p>Tom Johnson</p>
+        <p>Joseph Summner</p>
+        <p>Tomas Jerry</p>
+        <p>Tedd Forthe</p>
+        <p>Susan Wright</p>
+        <p>Jessie Jones</p>
+      </div>
+    </section>
+
+    <h2>Contact Information</h2>
+    <section class="opperation">
+      <div class="title"> 
+        <p>Hours: &nbsp;</p>
+        <p>&nbsp;</p>
+        <p>phone: &nbsp;</p>
+        <p>Email: &nbsp;</p>
+      </div>
+      <div class="names">
+        <p>9 am to 5 pm</p>
+          <p> Monday to Friday</p>
+        <p>(801) 555-3131</p>
+        <p>contact@northogdenchamber.com</p>
+      </div>
+    </section>
+
+    <h2 class="pagetitle">Contact Us</h2>
+    <div class="commentcontainer">
+      <form method="get" action="thankyoucomment.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label class="top">Full Name*<input type="text" name="fullame" pattern="([A-Za-z]).{5,}" required></label>
+          <label class="top">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>
+          <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+          <textarea class="top" name="addInfo" rows="10" cols="33">Message or Question.</textarea>
+        </fieldset>
+
+        <input type="submit" value="Send Message" class="submitBtn">
+      </form>
+      <img class="flagPannel" src="images/flagabove200.jpg" alt="Flying Flag">
+    </div>
+  </main>
+
+  <section class="contact">
+    <div class="contactInfo">
+      <h2>Office</h2>
+      <div class="address">
+        <p>North Ogden Camber of Commerce</p>
+        <p>2739 N 400 N</p>
+        <p>North Ogden UT 84414</p>
+        <br>
+        <p>Phone: (801) 555-3131</p>
+        <p>Email: contact@northogdenchamber.com</p>
+      </div>
+    </div>
+    <div class="media">
+      <a href="https://www.facebook.com/"><img src="images/iconFacebook.png" width="50px"></a>
+      <a href="https://www.instagram.com"><img src="images/iconInstagram.png" width="50px"></a>
+      <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png" width="50px"></a>
+      <a href="https://twitter.com/"><img src="images/iconTwitter.png" width="50px"></a>
+      <a href="https://www.youtube.com/"><img src="images/iconYoutube.png" width="50px"></a>
+    </div>
+
+
+  </section>
   </main>
 
   <!-- FOOTER HERE -->
   <footer>
-    &copy; 2021 &bull; North Ogden Chamber of Commerce
-    Todays Date
+    &copy; 2021 &bull; North Ogden Chamber of Commerce<br>
+    <span id="currentdate"></span>
   </footer>
-  <script>  </script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/weather.js">
+  </script>
+  <script src="js/business.js"></script>
 </body>
 
 </html>

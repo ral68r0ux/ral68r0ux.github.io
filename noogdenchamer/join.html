@@ -3,18 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Home of the North Ogden Chamber of Commerce">
-  <meta name="author" content="John Doe">
+  <meta name="description" content="North Ogden Chamber of Commerce/Home">
+  <meta name="author" content="Andrew Larsen">
 
   <!-- This start file was build by Paul Cheney  -->
-  <title>North Ogden Chamber of Commerce/Join</title>
+  <title>North Ogden Chamber of Commerce</title>
 
   <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Typography -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.ico">
+
   <!-- STYLE SHEETS -->
   <link href="css/normalize.css" rel="stylesheet">
   <!-- phone-default -->
@@ -23,43 +26,108 @@
   <link href="css/medium.css" rel="stylesheet">
   <!-- enhance-desktop -->
   <link href="css/large.css" rel="stylesheet">
-
-
-
 </head>
 
 <body>
-  <!-- HEADER HERE -->
-  <header>
-    <h1>North Ogden</h1>
-    <h2>Camber of Commerce</h2>
+  <!-- HEADER/NAVIGATION HERE -->
+  <header class="clearfix center">
+    <div class="headcontainer">
+
+      <img srcset="images/logo200.png 320w,
+        images/logo300.png 800w" sizes="(max-width: 560px) 320px, 600px" src="images/logo300.png" alt="Logo">
+      <div>
+        <h1>North Ogden</h1>
+        <h2>Camber of Commerce</h2>
+      </div>
+    </div>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="noogden.html">North Ogden City</a></li>
+        <li class="active"><a href="join.html">Join</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
-
-
-  <!-- NAVIGATION HERE -->
-  <nav class="clearfix">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="noogden.html">North Ogden City</a></li>
-      <li class="active"><a href="join.html">Join</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
 
 
   <!-- CONTENT HERE -->
   <main>
-    <h1>Products</h1>
-    <p>The page name should almost exactly match the menu item. </p>
+    <h2 class="pagetitle">Join the North Ogden Canmber of Commerce</h2>
+    <div class="joinchamber">
+      
+      <form method="get" action="thankyoujoin.html">
+        <fieldset>
+          <legend>Applicant Information</legend>
+          <label class="top">First Name*<input type="text" name="firstname" pattern="([A-Za-z]).{5,}" required></label>
+          <label class="top">Last Name*<input type="text" name="lastname" pattern="([A-Za-z]).{5,}" required></label>
+          <label class="top">Title<input type="text" name="title" pattern="([A-Za-z]).{5,}"></label>
+          <label class="top">Email*<input type="email" name="email" placeholder="someone@email.com" required></label>
+          <label class="top">Cell Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+
+        </fieldset>
+        <fieldset>
+          <legend>Compnay Information</legend>
+          <label class="top">Company Name*<input type="text" name="companyname" required></label>
+          <label class="top">Street Address<input type="text" name="streetaddress"></label>
+          <label class="top">City<input type="text" name="city"></label>
+          <label class="top">State<input type="text" name="state"></label>
+          <label class="top">Zip Code<input type="number" name="zipcode"></label>
+          <textarea class="top" name="addInfo" rows="10" cols="33">Describe type of business.</textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Membership</legend>
+          <label class="sbs"><input type="radio" name="membership" value="nonprofit"> Non-Profit ($100)</label>
+          <p>Monthly News Letter, Advertising Discounts, Listing in Directory</p>
+          <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze ($200)</label>
+          <p>The above benifits plus, Member Workshops, "Member Only" resources</p>
+          <label class="sbs"><input type="radio" name="membership" value="sliver"> Silver ($400)</label>
+          <p>The above benifits plus, Larger Advertising Discouns, Chamber Web Spotlight</p>
+          <label class="sbs"><input type="radio" name="membership" value="gold"> Gold ($1,000)</label>
+          <p>The above benifits plus, Annual Gala Tickets (2), Partners Annual Event Passes (2)</p>
+        </fieldset>
+
+
+        <input type="submit" value="Join Chamber" class="submitBtn">
+      </form>
+      <img class="flagPannel" src="images/flagabove600.jpg" alt="Flying Flag">
+    </div>
+  </main>
+
+  <section class="contact">
+    <div class="contactInfo">
+      <h2>Office</h2>
+      <div class="address">
+        <p>North Ogden Camber of Commerce</p>
+        <p>2739 N 400 N</p>
+        <p>North Ogden UT 84414</p>
+        <br>
+        <p>Phone: (801) 555-3131</p>
+        <p>Email: contact@northogdenchamber.com</p>
+      </div>
+    </div>
+    <div class="media">
+      <a href="https://www.facebook.com/"><img src="images/iconFacebook.png" width="50px"></a>
+      <a href="https://www.instagram.com"><img src="images/iconInstagram.png" width="50px"></a>
+      <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png" width="50px"></a>
+      <a href="https://twitter.com/"><img src="images/iconTwitter.png" width="50px"></a>
+      <a href="https://www.youtube.com/"><img src="images/iconYoutube.png" width="50px"></a>
+    </div>
+
+
+  </section>
   </main>
 
   <!-- FOOTER HERE -->
   <footer>
-    &copy; 2021 &bull; North Ogden Chamber of Commerce
-    Todays Date
+    &copy; 2021 &bull; North Ogden Chamber of Commerce<br>
+    <span id="currentdate"></span>
   </footer>
-  <script>  </script>
+  <script src="js/currentdate.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
