@@ -68,7 +68,7 @@ p {
 .headcontainer h2 {
   grid-column: 2;
   justify-self: start;
-  align-self: enter;
+  
 }
 
 .headcontainer h1 {
@@ -179,7 +179,6 @@ main picture.herophoto {
 .weathersummary h2 {
   margin: 0;
   padding: 0.25rem;
-  /*font-size: 1rem;*/
 }
 .weathersummary p {
   margin: 0;
@@ -198,7 +197,7 @@ main picture.herophoto {
 /*----- Ads -----*/
 div.cards {
   display: grid;
-  grid-template-columns: 1f; 
+  grid-template-columns: 1fr; 
 }
 div.cards .businessBlock {
   border: 2px solid #000;
@@ -215,7 +214,7 @@ div.cards section.infoBlock {
 /*----- Directory -----*/
 .grid .directory {
   display: grid;
-  grid-template-columns: 1f; 
+  grid-template-columns: 1fr; 
 }
 .directory .businessBlock {
   border: 2px solid #000;
@@ -311,11 +310,11 @@ picture.photoBlock{
   border-radius: 15px;
   text-align: center;
 }
-.follow picture {
+.follow .group {
   width: 100%;
   align-content: center;
 }
-.follow picture img {
+.follow img {
   width: 100%;
 }
 

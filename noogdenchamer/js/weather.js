@@ -17,7 +17,7 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((weatherInfo) => {
-    console.log(weatherInfo);
+    
     // Current Weather Summary
     document.getElementById("currentForecast").textContent =
       weatherInfo.current.weather[0].description;

@@ -6,20 +6,15 @@ fetch(requestURL)
   .then(function (membersObject) {
 
     const members = membersObject['members'];
-    console.log(members);
+
     const one = Math.floor(Math.random() * members.length);
     let two = Math.floor(Math.random() * members.length);
     let three = Math.floor(Math.random() * members.length);
-console.log(one);
-console.log(two);
-console.log(three);
+
     while (one === two|| one === three || two === three) {
       two = Math.floor(Math.random() * members.length);
       three = Math.floor(Math.random() * members.length);
     }
-    console.log(one);
-    console.log(two);
-    console.log(three);
     
     for (let i = 0; i < members.length; i++) {
       if (i == one || i == two || i == three) {
