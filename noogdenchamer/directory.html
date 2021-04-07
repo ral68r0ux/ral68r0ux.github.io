@@ -57,41 +57,44 @@
   <!-- CONTENT HERE -->
   <main>
     <h1>Members of North Ogden Chamber of Commerce</h1>
-    
-  <div class="directory"></div>
 
-  <section class="contact">
-    <div class="contactInfo">
-      <h2>Office</h2>
-      <div class="address">
-      <p>North Ogden Camber of Commerce</p>
-      <p>2739 N 400 N</p>
-      <p>North Ogden UT 84414</p>
-      <br>
-      <p>Phone: (801) 555-3131</p>
-      <p>Email: contact@northogdenchamber.com</p>
-    </div>
-    </div>
-    <div class="media">
-      <a href="https://www.facebook.com/"><img src="images/iconFacebook.png" width="50px"></a>
-      <a href="https://www.instagram.com"><img src="images/iconInstagram.png" width="50px"></a>
-      <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png" width="50px"></a>
-      <a href="https://twitter.com/"><img src="images/iconTwitter.png" width="50px"></a>
-      <a href="https://www.youtube.com/"><img src="images/iconYoutube.png" width="50px"></a>
+    <div class="grid" onclick="toggleSwitch(this)">&#9776;
+      <div class="directory"></div>
     </div>
 
+    <section class="contact">
+      <div class="contactInfo">
+        <h2>Office</h2>
+        <div class="address">
+          <p>North Ogden Camber of Commerce</p>
+          <p>2739 N 400 N</p>
+          <p>North Ogden UT 84414</p>
+          <br>
+          <p>Phone: (801) 555-3131</p>
+          <p>Email: contact@northogdenchamber.com</p>
+        </div>
+      </div>
 
-  </section>
-</main>
+      <div class="media">
+        <a href="https://www.facebook.com/"><img src="images/iconFacebook.png" width="50px"></a>
+        <a href="https://www.instagram.com"><img src="images/iconInstagram.png" width="50px"></a>
+        <a href="https://www.linkedin.com/"><img src="images/iconLinkedIn.png" width="50px"></a>
+        <a href="https://twitter.com/"><img src="images/iconTwitter.png" width="50px"></a>
+        <a href="https://www.youtube.com/"><img src="images/iconYoutube.png" width="50px"></a>
+      </div>
 
-<!-- FOOTER HERE -->
-<footer>
-  &copy; 2021 &bull; North Ogden Chamber of Commerce<br>
-  <span id="currentdate"></span>
-</footer>
-<script src="js/currentdate.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/directory.js"></script>
+    </section>
+  </main>
+
+  <!-- FOOTER HERE -->
+  <footer>
+    &copy; 2021 &bull; North Ogden Chamber of Commerce<br>
+    <span id="currentdate"></span>
+  </footer>
+  <script src="js/currentdate.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="js/switch.js"></script>
+  <script src="js/directory.js"></script>
 </body>
 
 </html>

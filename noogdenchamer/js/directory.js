@@ -22,12 +22,12 @@ console.log(members);
         let photo = document.createElement('picture');
         photo.setAttribute('class', 'photoBlock');
 
-        let h3 = document.createElement('h3');
+        let h3 = document.createElement('ul');
         let logoImage = document.createElement('img');
-        let street = document.createElement('p');
-        let cityLine = document.createElement('p');
-        let phoneNumber = document.createElement('p');
-        let domain = document.createElement('p');
+        let street = document.createElement('li');
+        let cityLine = document.createElement('li');
+        let phoneNumber = document.createElement('li');
+        let domain = document.createElement('li');
         let photoimg = document.createElement('img');
 
         logoImage.setAttribute('src', members[i].logo);
@@ -50,14 +50,13 @@ console.log(members);
         photo.appendChild(photoimg);
         
         card.appendChild(logo);
-        card.appendChild(photo);
-
         info.appendChild(h3);
         info.appendChild(street);
         info.appendChild(cityLine);
         info.appendChild(phoneNumber);
         info.appendChild(domain);
         card.appendChild(info);
+        card.appendChild(photo);
 
         document.querySelector('div.directory').appendChild(card); 
       

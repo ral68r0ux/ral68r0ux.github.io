@@ -35,6 +35,12 @@ div.cards {
 }
 
 
+/*----- Directory -----*/
+}.grid .directory {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 /*----------- FOOTER --------------*/
     
 } /* end of media query */

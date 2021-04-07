@@ -200,20 +200,50 @@ div.cards {
   display: grid;
   grid-template-columns: 1f; 
 }
-div.businessBlock {
+div.cards .businessBlock {
   border: 2px solid #000;
   margin-bottom: 1rem;
   box-shadow: 5px 5px 15px 5px #000;
 }
-picture.photoBlock{
+div.cards picture.logoBlock{
   margin: 0 2%;
 }
-section.infoBlock {
+div.cards section.infoBlock {
   margin: 0 2%;
 }
-#noshow {
 
+/*----- Directory -----*/
+.grid .directory {
+  display: grid;
+  grid-template-columns: 1f; 
 }
+.directory .businessBlock {
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 15px 5px #000;
+}
+.businessBlock li {
+  list-style-type: none;
+  margin: 0 4%;
+  padding: 3px;
+}
+.infoBlock {
+  margin-bottom: 1rem;
+}
+
+.businessBlock ul {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+picture.logoBlock{
+  margin: 4%;
+  
+}
+
+picture.photoBlock{
+  display: none;
+}
+
 /*----- Offer -----*/
 .membershipOffer {
   border: 2px solid #fff;
