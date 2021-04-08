@@ -120,11 +120,28 @@ nav ul li a {
 }
 
 /*----- contact -----*/
+.map {
+  display: block;
+}
 .contact {
   border: 2px solid #fff;
   box-shadow: 5px 5px 15px 5px #000;
   border-radius: 5px;
   align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+}
+.contactInfo{
+  grid-column: 1;
+}
+.map {
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.media {
+  grid-column: 1;
+  grid-row: 2;
 }
 .contact h2{
   background-color: #0000fe;

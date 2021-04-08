@@ -364,6 +364,11 @@ picture.photoBlock {
   padding: 1rem;
   text-align: center;
 }
+
+.map {
+  display: none;
+}
+
 /* about North Ogden */
 .road,
 .noOgden,
