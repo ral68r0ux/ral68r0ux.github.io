@@ -47,10 +47,6 @@ p {
 }
 
 /*----------- HEADER --------------*/
-/*header, nav, main, footer {
-  margin: 1.25rem auto;
-  max-width: 55em; 
-}*/
 
 .headcontainer {
   display: grid;
@@ -68,7 +64,6 @@ p {
 .headcontainer h2 {
   grid-column: 2;
   justify-self: start;
-  
 }
 
 .headcontainer h1 {
@@ -197,14 +192,14 @@ main picture.herophoto {
 /*----- Ads -----*/
 div.cards {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
 }
 div.cards .businessBlock {
   border: 2px solid #000;
   margin-bottom: 1rem;
   box-shadow: 5px 5px 15px 5px #000;
 }
-div.cards picture.logoBlock{
+div.cards picture.logoBlock {
   margin: 0 2%;
 }
 div.cards section.infoBlock {
@@ -214,7 +209,7 @@ div.cards section.infoBlock {
 /*----- Directory -----*/
 .grid .directory {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
 }
 .directory .businessBlock {
   border: 2px solid #000;
@@ -234,12 +229,11 @@ div.cards section.infoBlock {
   font-size: 1.25rem;
   font-weight: bolder;
 }
-picture.logoBlock{
+picture.logoBlock {
   margin: 4%;
-  
 }
 
-picture.photoBlock{
+picture.photoBlock {
   display: none;
 }
 
@@ -495,16 +489,51 @@ section.opperation {
   margin: 4%;
   box-shadow: 5px 5px 15px 5px #000;
 }
-.thanks p{
+.thanks p {
   margin: 0 2%;
 }
 
+/* r & a */
+.ra-page h1,
+.ra-page p {
+  text-align: center;
+  margin: 4% 2%;
+}
+.ra-page ol {
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 15px 5px #000;
+  padding: 4%;
+}
+.ra-page ol li {
+  margin: 0 4%;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.ra-page ol {
+  margin: 1%;
+}
+.ra-page ul li {
+  list-style-type: none;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  font-size: 0.8rem;
+}
+/*.listBox {
+  display: grid;
+  grid-template-columns: ;
+}*/
 /*----------- FOOTER --------------*/
 footer {
   background-color: #0000fe;
   text-align: center;
   color: white;
   padding: 1rem;
+}
+.r-and-a {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

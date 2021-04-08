@@ -184,6 +184,15 @@ picture.photoBlock{
   width: 100%;
   max-width: 200px;
 }
+.ra-page ol li {
+  font-size: 1.5rem;
+}
+.ra-page ul li {
+  font-size: 1.25rem;
+}
+
 /*----------- FOOTER --------------*/
-    
+.r-and-a {
+  font-size: 1.5rem;
+}
 } /* end of media query */
